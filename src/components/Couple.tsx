@@ -1,0 +1,42 @@
+
+import * as React from "react";
+
+interface CoupleProps extends React.SVGProps<SVGSVGElement> {
+  width?: number | string;
+  height?: number | string;
+  color?: string;
+}
+
+const Couple = ({
+  width = 20,
+  height = 20,
+  color = "currentColor",
+  ...props
+}: CoupleProps) => (
+  <svg
+    viewBox="0 0 20 20"
+    width={width}
+    height={height}
+    {...props}
+  >
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_22404_5485)">
+<path d="M4.375 14.375C5.75571 14.375 6.875 13.2557 6.875 11.875C6.875 10.4943 5.75571 9.375 4.375 9.375C2.99429 9.375 1.875 10.4943 1.875 11.875C1.875 13.2557 2.99429 14.375 4.375 14.375Z" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8.125 19.375C8.125 18.3804 7.72991 17.4266 7.02665 16.7233C6.32339 16.0201 5.36956 15.625 4.375 15.625C3.38044 15.625 2.42661 16.0201 1.72335 16.7233C1.02009 17.4266 0.625 18.3804 0.625 19.375" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.75 19.375C18.75 18.3804 18.3549 17.4266 17.6516 16.7233C16.9484 16.0201 15.9946 15.625 15 15.625C14.0054 15.625 13.0516 16.0201 12.3483 16.7233C11.6451 17.4266 11.25 18.3804 11.25 19.375" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M15 14.375C16.3807 14.375 17.5 13.2557 17.5 11.875C17.5 10.4943 16.3807 9.375 15 9.375C13.6193 9.375 12.5 10.4943 12.5 11.875C12.5 13.2557 13.6193 14.375 15 14.375Z" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M12.5008 11.875C12.5008 11.875 12.5008 15 10.625 15" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.5 11.875C17.5 11.875 17.5 15 19.3742 15" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13.5589 1.24847C13.37 1.05023 13.1427 0.892414 12.891 0.784585C12.6392 0.676755 12.3682 0.621156 12.0944 0.621156C11.8205 0.621156 11.5495 0.676755 11.2977 0.784585C11.046 0.892414 10.8187 1.05023 10.6298 1.24847L9.37394 2.54847L8.11894 1.24847C7.92991 1.05021 7.7026 0.892375 7.45078 0.784536C7.19896 0.676697 6.92788 0.621094 6.65394 0.621094C6.38 0.621094 6.10891 0.676697 5.8571 0.784536C5.60528 0.892375 5.37797 1.05021 5.18894 1.24847C4.79939 1.6565 4.58203 2.19893 4.58203 2.76305C4.58203 3.32718 4.79939 3.86961 5.18894 4.27764L8.9281 8.14347C8.98568 8.20372 9.05487 8.25168 9.1315 8.28444C9.20813 8.3172 9.2906 8.3341 9.37394 8.3341C9.45728 8.3341 9.53975 8.3172 9.61638 8.28444C9.693 8.25168 9.7622 8.20372 9.81977 8.14347L13.5589 4.27764C13.9485 3.86961 14.1658 3.32718 14.1658 2.76305C14.1658 2.19893 13.9485 1.6565 13.5589 1.24847Z" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_22404_5485">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+  </svg>
+);
+
+export default Couple;

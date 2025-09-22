@@ -1,0 +1,26 @@
+// import './check-npmrc';
+
+// Icons
+export { default as Accessible } from './components/Accessible';
+export { default as Add } from './components/Add';
+export { default as ArrowRight } from './components/ArrowRight';
+export { default as Attach_file_add } from './components/Attach_file_add';
+export { default as Budaya } from './components/Budaya';
+export { default as Bus } from './components/Bus';
+export { default as Calendar_month } from './components/Calendar_month';
+export { default as City_tour } from './components/City_tour';
+export { default as Commute } from './components/Commute';
+export { default as Couple } from './components/Couple';
+export { default as Elderly_woman } from './components/Elderly_woman';
+export { default as Frame } from './components/Frame';
+export { default as GroupFamily } from './components/GroupFamily';
+export { default as GroupFriend } from './components/GroupFriend';
+export { default as Halal } from './components/Halal';
+export { default as KidIcon } from './components/KidIcon';
+export { default as MountainIcon } from './components/MountainIcon';
+export { default as PrivateTransport } from './components/PrivateTransport';
+export { default as Shopping } from './components/Shopping';
+export { default as SoloTraveler } from './components/SoloTraveler';
+
+// Logo
+export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';
