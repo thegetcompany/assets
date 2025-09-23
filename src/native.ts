@@ -1,28 +1,4 @@
-// import './check-npmrc';
-
-// Icons
-export { default as Accessible } from './components/Accessible';
-export { default as Add } from './components/Add';
-export { default as ArrowRight } from './components/ArrowRight';
-export { default as Attach_file_add } from './components/Attach_file_add';
-export { default as Budaya } from './components/Budaya';
-export { default as Bus } from './components/Bus';
-export { default as Calendar_month } from './components/Calendar_month';
-export { default as City_tour } from './components/City_tour';
-export { default as Commute } from './components/Commute';
-export { default as Couple } from './components/Couple';
-export { default as Elderly_woman } from './components/Elderly_woman';
-export { default as Frame } from './components/Frame';
-export { default as GroupFamily } from './components/GroupFamily';
-export { default as GroupFriend } from './components/GroupFriend';
-export { default as Halal } from './components/Halal';
-export { default as KidIcon } from './components/KidIcon';
-export { default as MountainIcon } from './components/MountainIcon';
-export { default as PrivateTransport } from './components/PrivateTransport';
-export { default as Shopping } from './components/Shopping';
-export { default as SoloTraveler } from './components/SoloTraveler';
-
-// Icons png
+export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';
 export { default as AccessiblePng } from './assets/images/pngFromSvg/accessible_icon.png';
 export { default as AddPng } from './assets/images/pngFromSvg/add_icon.png';
 export { default as ArrowRightPng } from './assets/images/pngFromSvg/arrow-right_icon.png';
@@ -43,6 +19,3 @@ export { default as MountainIconPng } from './assets/images/pngFromSvg/MountainI
 export { default as PrivateTransportPng } from './assets/images/pngFromSvg/private-transport_icon.png';
 export { default as ShoppingPng } from './assets/images/pngFromSvg/shopping_icon.png';
 export { default as SoloTravelerPng } from './assets/images/pngFromSvg/solo-traveler_icon.png';
-
-// Logo
-export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';

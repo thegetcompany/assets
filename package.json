@@ -2,7 +2,12 @@
   "name": "@thegetcompany/assets",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "react-native": "dist/native.js",
   "module": "dist/index.esm.js",
+  "exports": {
+    "import": "./dist/index.esm.js",
+    "require": "./dist/index.js"
+  },
   "types": "dist/index.d.ts",
   "files": [
     "dist",
@@ -10,7 +15,8 @@
     "src/assets/images/*.jpg"
   ],
   "scripts": {
-    "build": "tsc --outDir dist/lib --declarationDir dist/types --declaration true && rollup -c",
+    "build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
+    "build": "tsc --emitDeclarationOnly --declaration --outDir dist && rollup -c",
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {
@@ -23,10 +29,18 @@
   "author": "Getgoing",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": ">=18.2.0 <20.0.0",
+    "react-dom": ">=18.2.0 <20.0.0",
     "react-native": ">=0.60.0",
     "react-native-svg": "^13.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-dom": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
@@ -38,8 +52,8 @@
     "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-node-resolve": "^15.3.1",
     "@svgr/core": "^8.1.0",
-    "@types/react": "^19.1.13",
-    "@types/react-dom": "^19.1.9",
+    "@types/react": "*",
+    "@types/react-dom": "*",
     "rollup": "^3.29.5",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
@@ -47,6 +61,7 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "rollup-plugin-copy": "^3.5.0"
+    "rollup-plugin-copy": "^3.5.0",
+    "sharp": "^0.34.4"
   }
 }

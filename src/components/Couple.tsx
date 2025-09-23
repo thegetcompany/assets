@@ -17,10 +17,11 @@ const Couple = ({
     viewBox="0 0 20 20"
     width={width}
     height={height}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clipPath="url(#clip0_22404_5485)">
+    <g clipPath="url(#clip0_22404_5485)">
 <path d="M4.375 14.375C5.75571 14.375 6.875 13.2557 6.875 11.875C6.875 10.4943 5.75571 9.375 4.375 9.375C2.99429 9.375 1.875 10.4943 1.875 11.875C1.875 13.2557 2.99429 14.375 4.375 14.375Z" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M8.125 19.375C8.125 18.3804 7.72991 17.4266 7.02665 16.7233C6.32339 16.0201 5.36956 15.625 4.375 15.625C3.38044 15.625 2.42661 16.0201 1.72335 16.7233C1.02009 17.4266 0.625 18.3804 0.625 19.375" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18.75 19.375C18.75 18.3804 18.3549 17.4266 17.6516 16.7233C16.9484 16.0201 15.9946 15.625 15 15.625C14.0054 15.625 13.0516 16.0201 12.3483 16.7233C11.6451 17.4266 11.25 18.3804 11.25 19.375" stroke={color || "currentColor"} strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
@@ -34,8 +35,6 @@ const Couple = ({
 <rect width="20" height="20" fill="white"/>
 </clipPath>
 </defs>
-</svg>
-
   </svg>
 );
 

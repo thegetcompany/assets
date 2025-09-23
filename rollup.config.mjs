@@ -12,7 +12,12 @@ export default {
   plugins: [
     peerDepsExternal(),
     resolve({extensions: [".js", ".jsx", ".ts", ".tsx", ".png", ".jpg"]}),
-    commonjs(),
+    commonjs({
+      defaultIsModuleExports: true,
+      namedExports: {
+        react: ["createElement", "Component", "Fragment"],
+      },
+    }),
     typescript({
       tsconfig: "./tsconfig.json",
       clean: true,
@@ -23,7 +28,7 @@ export default {
       extensions: [".js", ".jsx", ".ts", ".tsx"],
       presets: [
         "@babel/preset-env",
-        "@babel/preset-react",
+        ["@babel/preset-react", {runtime: "automatic"}],
         "@babel/preset-typescript",
       ],
       babelHelpers: "bundled",
@@ -34,14 +39,24 @@ export default {
     }),
     copy({
       targets: [
+        {
+          src: "src/assets/images/pngFromSvg/**/*.png",
+          dest: "dist/assets/images/pngFromSvg",
+        },
         {src: "src/assets/images/*.{png,jpg}", dest: "dist/assets/images"},
       ],
+      hook: "buildEnd",
       verbose: true,
     }),
   ],
   output: [
-    {file: "dist/index.js", format: "cjs", sourcemap: true},
+    {
+      file: "dist/index.cjs.js",
+      format: "cjs",
+      sourcemap: true,
+      exports: "named",
+    },
     {file: "dist/index.esm.js", format: "esm", sourcemap: true},
   ],
-  external: ["react", "react-native", "react-native-svg", "react-dom"],
+  external: ["react", "react-dom", "react-native", "react-native-svg"],
 };
