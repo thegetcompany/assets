@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
-    "build": "tsc --emitDeclarationOnly --declaration --outDir dist && rollup -c",
+    "build": "node scripts/generate-icons.js && tsc --emitDeclarationOnly --declaration --outDir dist && rollup -c",
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {
