@@ -22,7 +22,14 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           always-auth: true
           scope: "@thegetcompany"
-
+      - run: echo "Token last 4: ${NODE_AUTH_TOKEN: -4}"
+        env:
+        - name: NODE_AUTH_TOKEN
+          value: ${{ secrets.NPM_ASSETS_TOKEN }}
+      - name: Configure .npmrc
+        run: |
+          echo "@thegetcompany:registry=https://npm.pkg.github.com" >> ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_ASSETS_TOKEN }}" >> ~/.npmrc
       - run: npm ci
       - run: npm run build
       - run: |
