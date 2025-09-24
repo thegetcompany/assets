@@ -47,3 +47,9 @@ export { default as SoloTravelerPng } from './assets/images/pngFromSvg/solo-trav
 // Logo
 export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';
 export { default as PersonWithPhone } from './assets/images/personWithPhone.png';
+export { default as newCityTour } from './assets/images/newCityTour.png';
+export { default as newFotografi } from './assets/images/newFotografi.png';
+export { default as newHalal } from './assets/images/newHalal.png';
+export { default as newKuliner } from './assets/images/newKuliner.png';
+export { default as newSejarah } from './assets/images/newSejarah.png';
+export { default as newShopping } from './assets/images/newShopping.png';
