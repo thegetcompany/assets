@@ -1,0 +1,36 @@
+
+import * as React from "react";
+
+interface Star_onProps extends React.SVGProps<SVGSVGElement> {
+  width?: number | string;
+  height?: number | string;
+  color?: string;
+}
+
+const Star_on = ({
+  width = 20,
+  height = 20,
+  color = "currentColor",
+  ...props
+}: Star_onProps) => (
+  <svg
+    viewBox="0 0 20 20"
+    width={width}
+    height={height}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <defs>
+		<style>.cls-1{fill:#F5803E;}</style>
+	</defs>
+	<title>star1</title>
+	<g id="Layer_2" data-name="Layer 2">
+		<g id="Layer_1-2" data-name="Layer 1">
+			<polygon class="cls-1" points="54.4 0 71.3 34.1 108.9 39.6 81.7 66.1 88.1 103.6 54.4 85.9 20.8 103.6 27.2 66.1 0 39.6 37.6 34.1 54.4 0"/>
+		</g>
+	</g>
+  </svg>
+);
+
+export default Star_on;
