@@ -62,7 +62,6 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@thegetcompany/assets": "^1.0.1",
     "rollup-plugin-copy": "^3.5.0",
     "sharp": "^0.34.4"
   }
