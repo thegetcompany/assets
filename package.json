@@ -15,9 +15,11 @@
     "src/assets/images/*.jpg"
   ],
   "scripts": {
-    "build:types": "tsc --emitDeclarationOnly --declaration --outDir dist",
-    "build": "node scripts/generate-icons.js && tsc --emitDeclarationOnly --declaration --outDir dist && rollup -c",
-    "prepublishOnly": "npm run build"
+    "clean:install": "rimraf node_modules package-lock.json",
+    "install:clean": "npm run clean:install && npm install",
+    "clean:build": "rimraf dist",
+    "build": "npm run install:clean && npm run clean:build && node scripts/generate-icons.js && tsc --emitDeclarationOnly --declaration --outDir dist && rollup -c",
+    "publish:package": "npm run build && npm version patch && npm publish --access public"
   },
   "publishConfig": {
     "access": "public",
@@ -55,6 +57,7 @@
     "@svgr/core": "^8.1.0",
     "@types/react": "*",
     "@types/react-dom": "*",
+    "rimraf": "^6.0.1",
     "rollup": "^3.29.5",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
