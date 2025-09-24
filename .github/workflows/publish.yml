@@ -24,8 +24,7 @@ jobs:
           scope: "@thegetcompany"
       - run: echo "Token last 4: ${NODE_AUTH_TOKEN: -4}"
         env:
-        - name: NODE_AUTH_TOKEN
-          value: ${{ secrets.NPM_ASSETS_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ASSETS_TOKEN }}
       - name: Configure .npmrc
         run: |
           echo "@thegetcompany:registry=https://npm.pkg.github.com" >> ~/.npmrc
