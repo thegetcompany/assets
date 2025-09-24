@@ -21,7 +21,7 @@ const TimeAvailability = ({
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <mask id="mask0_21022_9997" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="15">
+    <mask id="mask0_21022_9997" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="15">
 <rect y="0.5" width="14" height="14" fill="#D9D9D9"/>
 </mask>
 <g mask="url(#mask0_21022_9997)">

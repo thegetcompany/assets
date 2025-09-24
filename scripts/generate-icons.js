@@ -96,7 +96,57 @@ function cleanSvgJsx(jsCode) {
     .replace(/stroke-linejoin=/g, "strokeLinejoin=")
     .replace(/fill-rule=/g, "fillRule=")
     .replace(/clip-rule=/g, "clipRule=")
-    .replace(/clip-path=/g, "clipPath=");
+    .replace(/clip-path=/g, "clipPath=")
+    .replace(/xlink:href="([^"]*)"/g, 'href={"$1"}')
+    .replace(/color-interpolation-filters=/g, "colorInterpolationFilters=")
+    .replace(/class=/g, "className=")
+    .replace(/style="([^"]*)"/g, (match, p1) => {
+      const styleObj = p1.split(";").reduce((acc, curr) => {
+        const [key, value] = curr.split(":");
+        if (key && value) {
+          acc[key.trim()] = value.trim();
+        }
+        return acc;
+      }, {});
+      const styleStr = Object.entries(styleObj)
+        .map(([key, value]) => {
+          const camelKey = key.replace(/-([a-z])/g, (_, char) =>
+            char.toUpperCase()
+          );
+          return `${camelKey}: '${value}'`;
+        })
+        .join(", ");
+      return `style={{ ${styleStr} }}`;
+    })
+    .replace(
+      /<defs>\s*<style[^>]*>([\s\S]*?)<\/style>\s*<\/defs>/g,
+      (match, css) => {
+        const classMap = {};
+        css.replace(
+          /\.([a-zA-Z0-9_-]+)\s*{([^}]*)}/g,
+          (_, className, rules) => {
+            const styleObj = rules.split(";").reduce((acc, rule) => {
+              const [key, value] = rule.split(":");
+              if (key && value) {
+                const camelKey = key
+                  .trim()
+                  .replace(/-([a-z])/g, (_, char) => char.toUpperCase());
+                acc.push(`${camelKey}: '${value.trim()}'`);
+              }
+              return acc;
+            }, []);
+            classMap[className] = styleObj.join(", ");
+          }
+        );
+
+        Object.entries(classMap).forEach(([cls, styleStr]) => {
+          const regex = new RegExp(`class=["']${cls}["']`, "g");
+          cleaned = cleaned.replace(regex, `style={{ ${styleStr} }}`);
+        });
+
+        return "";
+      }
+    );
   return cleaned.trim();
 }
 

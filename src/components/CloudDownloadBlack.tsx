@@ -1,18 +1,18 @@
 
 import * as React from "react";
 
-interface CloudDownload-Props extends React.SVGProps<SVGSVGElement> {
+interface CloudDownloadBlackProps extends React.SVGProps<SVGSVGElement> {
   width?: number | string;
   height?: number | string;
   color?: string;
 }
 
-const CloudDownload- = ({
+const CloudDownloadBlack = ({
   width = 20,
   height = 20,
   color = "currentColor",
   ...props
-}: CloudDownload-Props) => (
+}: CloudDownloadBlackProps) => (
   <svg
     viewBox="0 0 20 20"
     width={width}
@@ -25,4 +25,4 @@ const CloudDownload- = ({
   </svg>
 );
 
-export default CloudDownload-;
+export default CloudDownloadBlack;

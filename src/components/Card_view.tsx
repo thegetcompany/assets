@@ -21,7 +21,7 @@ const Card_view = ({
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <mask id="mask0_19052_74606" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
+    <mask id="mask0_19052_74606" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24">
 <rect x="0.5" width="24" height="24" fill="current"/>
 </mask>
 <g mask="url(#mask0_19052_74606)">

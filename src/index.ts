@@ -14,11 +14,12 @@ export { default as CalendarDays } from './components/CalendarDays';
 export { default as CalendarMonth } from './components/Calendar_month';
 export { default as Call } from './components/Call';
 export { default as CardView } from './components/Card_view';
+export { default as CastleHistory } from './components/Castle_history';
 export { default as Check } from './components/Check';
 export { default as ChevronUp } from './components/ChevronUp';
 export { default as CityTour } from './components/City_tour';
-export { default as CloudDownloadMin } from './components/CloudDownload-';
 export { default as CloudDownload } from './components/CloudDownload';
+export { default as CloudDownloadBlack } from './components/CloudDownloadBlack';
 export { default as CloudUpload } from './components/CloudUpload';
 export { default as Commute } from './components/Commute';
 export { default as Couple } from './components/Couple';
@@ -26,8 +27,8 @@ export { default as Destination } from './components/Destination';
 export { default as Discount } from './components/Discount';
 export { default as DoubleChevronUp } from './components/DoubleChevronUp';
 export { default as DragIndicator } from './components/Drag_indicator';
-export { default as EditAltMin } from './components/EditAlt-';
 export { default as EditAlt } from './components/EditAlt';
+export { default as EditAltBlack } from './components/EditAltBlack';
 export { default as ElderlyWoman } from './components/Elderly_woman';
 export { default as Email } from './components/Email';
 export { default as Error } from './components/Error';
@@ -209,7 +210,6 @@ export { default as MasterCardPng } from './assets/images/dashboard/master-card.
 export { default as NightShelterBluePng } from './assets/images/dashboard/night-shelter-blue.png';
 export { default as PdfFileBluePng } from './assets/images/dashboard/pdf-file-blue.png';
 export { default as PencilPng } from './assets/images/dashboard/pencil.png';
-export { default as PersonWithPhonePng } from './assets/images/dashboard/personWithPhone.png';
 export { default as PhoneBluePng } from './assets/images/dashboard/phone-blue.png';
 export { default as PhoneGreyOutlinePng } from './assets/images/dashboard/phone-grey-outline.png';
 export { default as PhoneGreyPng } from './assets/images/dashboard/phone-grey.png';
@@ -353,6 +353,7 @@ export { default as VisaPng } from './assets/images/dashboard/visa.png';
 export { default as WarningFillPng } from './assets/images/dashboard/warning-fill.png';
 export { default as WeatherIconPng } from './assets/images/dashboard/weather-icon.png';
 export { default as ZipPng } from './assets/images/dashboard/zip.png';
+export { default as PersonWithPhonePng } from './assets/images/getgoingApp/personWithPhone.png';
 export { default as AccessiblePng } from './assets/images/pngFromSvg/accessible_icon.png';
 export { default as AddPng } from './assets/images/pngFromSvg/add_icon.png';
 export { default as ArrowRightPng } from './assets/images/pngFromSvg/arrow-right_icon.png';
@@ -383,9 +384,11 @@ export { default as CalendarDaysPng2 } from './assets/images/pngFromSvg/dashboar
 export { default as CalendarPng3 } from './assets/images/pngFromSvg/dashboard/calendar_icon.png';
 export { default as CalendarMonthPng3 } from './assets/images/pngFromSvg/dashboard/calendar_month_icon.png';
 export { default as CallPng2 } from './assets/images/pngFromSvg/dashboard/call_icon.png';
+export { default as CastleHistoryPng } from './assets/images/pngFromSvg/dashboard/castle_history_icon.png';
 export { default as CheckPng2 } from './assets/images/pngFromSvg/dashboard/check_icon.png';
 export { default as ChevronUpPng2 } from './assets/images/pngFromSvg/dashboard/chevron-up_icon.png';
 export { default as CityTourPng4 } from './assets/images/pngFromSvg/dashboard/city_tour_icon.png';
+export { default as CloudDownloadBlackPng } from './assets/images/pngFromSvg/dashboard/cloud-download-black_icon.png';
 export { default as CloudDownloadMinPng2 } from './assets/images/pngFromSvg/dashboard/cloud-download-_icon.png';
 export { default as CloudDownloadPng2 } from './assets/images/pngFromSvg/dashboard/cloud-download_icon.png';
 export { default as CloudUploadPng2 } from './assets/images/pngFromSvg/dashboard/cloud-upload_icon.png';
@@ -393,6 +396,7 @@ export { default as CommutePng2 } from './assets/images/pngFromSvg/dashboard/com
 export { default as CouplePng5 } from './assets/images/pngFromSvg/dashboard/couple_icon.png';
 export { default as DiscountPng } from './assets/images/pngFromSvg/dashboard/discount_icon.png';
 export { default as DoubleChevronUpPng } from './assets/images/pngFromSvg/dashboard/double-chevron-up_icon.png';
+export { default as EditAltBlackPng } from './assets/images/pngFromSvg/dashboard/edit-alt-black_icon.png';
 export { default as EditAltMinPng } from './assets/images/pngFromSvg/dashboard/edit-alt-_icon.png';
 export { default as EditAltPng } from './assets/images/pngFromSvg/dashboard/edit-alt_icon.png';
 export { default as ElderlyWomanPng } from './assets/images/pngFromSvg/dashboard/elderly_woman_icon.png';
@@ -511,7 +515,3 @@ export { default as ShoppingPng6 } from './assets/images/pngFromSvg/triptype/sho
 export { default as UserPlusPng2 } from './assets/images/pngFromSvg/user-plus_icon.png';
 export { default as UsersPng2 } from './assets/images/pngFromSvg/users_icon.png';
 export { default as WhatsappPng2 } from './assets/images/pngFromSvg/whatsapp_icon.png';
-
-// Logo
-export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';
-export { default as PersonWithPhone } from './assets/images/personWithPhone.png';

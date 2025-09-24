@@ -65,15 +65,6 @@ async function writeIndexFile() {
     );
   });
 
-  // Export logo / tambahan manual
-  lines.push("\n// Logo");
-  lines.push(
-    `export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';`
-  );
-  lines.push(
-    `export { default as PersonWithPhone } from './assets/images/personWithPhone.png';`
-  );
-
   await fs.writeFile(indexFile, lines.join("\n"));
   console.log("index.ts generated successfully!");
 }

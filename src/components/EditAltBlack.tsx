@@ -1,18 +1,18 @@
 
 import * as React from "react";
 
-interface EditAlt-Props extends React.SVGProps<SVGSVGElement> {
+interface EditAltBlackProps extends React.SVGProps<SVGSVGElement> {
   width?: number | string;
   height?: number | string;
   color?: string;
 }
 
-const EditAlt- = ({
+const EditAltBlack = ({
   width = 20,
   height = 20,
   color = "currentColor",
   ...props
-}: EditAlt-Props) => (
+}: EditAltBlackProps) => (
   <svg
     viewBox="0 0 20 20"
     width={width}
@@ -25,4 +25,4 @@ const EditAlt- = ({
   </svg>
 );
 
-export default EditAlt-;
+export default EditAltBlack;
