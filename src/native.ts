@@ -1,4 +1,4 @@
-export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';
+// SVG
 export { default as AccessiblePng } from './assets/images/pngFromSvg/accessible_icon.png';
 export { default as AddPng } from './assets/images/pngFromSvg/add_icon.png';
 export { default as ArrowRightPng } from './assets/images/pngFromSvg/arrow-right_icon.png';
@@ -19,3 +19,7 @@ export { default as MountainIconPng } from './assets/images/pngFromSvg/MountainI
 export { default as PrivateTransportPng } from './assets/images/pngFromSvg/private-transport_icon.png';
 export { default as ShoppingPng } from './assets/images/pngFromSvg/shopping_icon.png';
 export { default as SoloTravelerPng } from './assets/images/pngFromSvg/solo-traveler_icon.png';
+
+// PNG
+export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';
+export { default as PersonWithPhone } from './assets/images/personWithPhone.png';

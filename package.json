@@ -1,6 +1,6 @@
 {
-  "name": "@thegetcompany/assets",
-  "version": "1.0.0",
+  "name": "thegetcompany-assets",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "react-native": "dist/native.js",
   "module": "dist/index.esm.js",
@@ -20,7 +20,8 @@
     "prepublishOnly": "npm run build"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -52,8 +53,8 @@
     "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-node-resolve": "^15.3.1",
     "@svgr/core": "^8.1.0",
-    "@types/react": "19.1.13",
-    "@types/react-dom": "19.1.9",
+    "@types/react": "*",
+    "@types/react-dom": "*",
     "rollup": "^3.29.5",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
