@@ -16,6 +16,7 @@
     "src/assets/images/*.jpg"
   ],
   "scripts": {
+    "scripts": "node ./scripts/index.js",
     "build:types": "tsc --project tsconfig.json --emitDeclarationOnly --outDir dist",
     "build:rollup": "rollup -c",
     "build": "npm run build:types && npm run build:rollup",
