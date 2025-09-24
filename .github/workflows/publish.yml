@@ -22,8 +22,7 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           always-auth: true
           scope: "@thegetcompany"
-      - name: Debug token (last 4 chars)
-        run: 'echo "Token last 4: ${NODE_AUTH_TOKEN: -4}"'
+      - name: Debug token
         run: 'echo "Token first 10: ${NODE_AUTH_TOKEN: 0:10}"'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ASSETS_TOKEN }}
