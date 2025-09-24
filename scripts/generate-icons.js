@@ -1,9 +1,12 @@
 const fs = require("fs").promises;
 const path = require("path");
 const {transform} = require("@svgr/core");
+const sharp = require("sharp");
 
 const inputDir = path.join(__dirname, "../src/assets/icons");
 const outputDir = path.join(__dirname, "../src/components");
+const outputDirNative = path.join(__dirname, "../src/native-components");
+const outputDirPng = path.join(__dirname, "../src/assets/images/pngFromSvg");
 
 const iconComponentTemplate = (variables, {componentName, jsx}) => `
 import * as React from "react";
@@ -24,6 +27,8 @@ const ${componentName} = ({
     viewBox="0 0 20 20"
     width={width}
     height={height}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     ${jsx}
@@ -34,7 +39,10 @@ export default ${componentName};
 `;
 
 function cleanSvgJsx(jsCode) {
-  return jsCode
+  const inner = jsCode.match(/<svg[^>]*>([\s\S]*?)<\/svg>/);
+  let cleaned = inner ? inner[1] : jsCode;
+
+  cleaned = cleaned
     .replace(/<path[^>]*>/g, (match) => {
       if (/mask=|clip-path=/.test(match)) return match;
 
@@ -81,7 +89,6 @@ function cleanSvgJsx(jsCode) {
             .replace(/fill="[^"]*"/, 'fill="none"');
         }
       }
-
       return newTag;
     })
     .replace(/stroke-width=/g, "strokeWidth=")
@@ -89,7 +96,8 @@ function cleanSvgJsx(jsCode) {
     .replace(/stroke-linejoin=/g, "strokeLinejoin=")
     .replace(/fill-rule=/g, "fillRule=")
     .replace(/clip-rule=/g, "clipRule=")
-    .replace(/clip-path=/g, "clipPath=")
+    .replace(/clip-path=/g, "clipPath=");
+  return cleaned.trim();
 }
 
 async function generateIcons() {
@@ -129,4 +137,85 @@ async function generateIcons() {
   }
 }
 
+// For RN
+function cleanSvgForPng(svgCode) {
+  let cleaned = svgCode;
+
+  cleaned = cleaned.replace(/<path[^>]*>/g, (match) => {
+    if (/mask=|clip-path=/.test(match)) return match;
+
+    let newTag = match;
+
+    const fillMatch = newTag.match(/fill="([^"]*)"/);
+    const strokeMatch = newTag.match(/stroke="([^"]*)"/);
+
+    const fillVal = fillMatch ? fillMatch[1] : null;
+    const strokeVal = strokeMatch ? strokeMatch[1] : null;
+
+    // if (fillVal && !strokeVal) {
+    //   if (fillVal !== "none") {
+    //     newTag = newTag.replace(
+    //       /fill="[^"]*"/,
+    //       'fill="#000000"'
+    //     );
+    //   }
+    // } else if (!fillVal && strokeVal) {
+    //   if (strokeVal !== "none") {
+    //     newTag = newTag.replace(
+    //       /stroke="[^"]*"/,
+    //       'stroke="#000000"'
+    //     );
+    //   }
+    // } else if (fillVal && strokeVal) {
+    //   if (fillVal === "none" && strokeVal !== "none") {
+    //     newTag = newTag.replace(
+    //       /stroke="[^"]*"/,
+    //       'stroke="#000000"'
+    //     );
+    //   } else if (strokeVal === "none" && fillVal !== "none") {
+    //     newTag = newTag.replace(
+    //       /fill="[^"]*"/,
+    //       'fill="#000000"'
+    //     );
+    //   } else if (fillVal === strokeVal) {
+    //     newTag = newTag
+    //       .replace(/fill="[^"]*"/, 'fill="#000000"')
+    //       .replace(/stroke="[^"]*"/, 'stroke="#000000"');
+    //   } else {
+    //     newTag = newTag
+    //       .replace(/stroke="[^"]*"/, 'stroke="#000000"')
+    //       .replace(/fill="[^"]*"/, 'fill="none"');
+    //   }
+    // }
+    return newTag;
+  });
+
+  return cleaned.trim();
+}
+
+async function generateIconsPng() {
+  await fs.mkdir(outputDirPng, {recursive: true});
+  const files = await fs.readdir(inputDir);
+
+  for (const file of files) {
+    if (path.extname(file) !== ".svg") continue;
+
+    const svgCode = await fs.readFile(path.join(inputDir, file), "utf-8");
+
+    const cleanedSvg = cleanSvgForPng(svgCode);
+
+    const pngBuffer = await sharp(Buffer.from(cleanedSvg))
+      .resize(200, 200, {fit: "contain", background: {r: 0, g: 0, b: 0, alpha: 1}})
+      .png()
+      .toBuffer();
+
+    const outputFile = path.join(outputDirPng, file.replace(".svg", "_icon.png"));
+    await fs.writeFile(outputFile, pngBuffer);
+    console.log(`Generated PNG: ${outputFile}`);
+  }
+
+  console.log("All SVGs converted to PNG.");
+}
+
 generateIcons().catch(console.error);
+generateIconsPng().catch(console.error);

@@ -4,6 +4,7 @@
     "target": "es5",
     "module": "esnext",
     "jsx": "react-native",
+    "jsxImportSource": "react",
     "declaration": true,
     "outDir": "dist",
     "strict": true,
