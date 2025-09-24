@@ -23,3 +23,4 @@ export { default as SoloTravelerPng } from './assets/images/pngFromSvg/solo-trav
 // PNG
 export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';
 export { default as PersonWithPhone } from './assets/images/personWithPhone.png';
+export * from "./index";

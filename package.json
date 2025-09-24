@@ -6,7 +6,8 @@
   "module": "dist/index.esm.js",
   "exports": {
     "import": "./dist/index.esm.js",
-    "require": "./dist/index.js"
+    "require": "./dist/index.js",
+    "react-native": "./dist/native.js"
   },
   "types": "dist/index.d.ts",
   "files": [
@@ -15,10 +16,9 @@
     "src/assets/images/*.jpg"
   ],
   "scripts": {
-    "clean:install": "rimraf node_modules package-lock.json",
-    "install:clean": "npm run clean:install && npm install",
-    "clean:build": "rimraf dist",
-    "build": "npm run install:clean && npm run clean:build && node scripts/generate-icons.js && tsc --emitDeclarationOnly --declaration --outDir dist && rollup -c",
+    "build:types": "tsc --project tsconfig.json --emitDeclarationOnly --outDir dist",
+    "build:rollup": "rollup -c",
+    "build": "npm run build:types && npm run build:rollup",
     "publish:package": "npm run build && npm version patch && npm publish --access public"
   },
   "publishConfig": {
