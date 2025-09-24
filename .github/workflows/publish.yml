@@ -23,7 +23,7 @@ jobs:
           always-auth: true
           scope: "@thegetcompany"
       - name: Debug token (last 4 chars)
-        run: echo "Token last 4: ${NODE_AUTH_TOKEN: -4}"
+        run: 'echo "Token last 4: ${NODE_AUTH_TOKEN: -4}"'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ASSETS_TOKEN }}
       - name: Configure .npmrc
