@@ -1,6 +1,6 @@
 const fs = require("fs").promises;
 const path = require("path");
-const {transform} = require("@svgr/core");
+const { transform } = require("@svgr/core");
 const sharp = require("sharp");
 
 const inputDir = path.join(__dirname, "../src/assets/icons");
@@ -8,7 +8,7 @@ const outputDir = path.join(__dirname, "../src/components");
 const outputDirNative = path.join(__dirname, "../src/native-components");
 const outputDirPng = path.join(__dirname, "../src/assets/images/pngFromSvg");
 
-const iconComponentTemplate = (variables, {componentName, jsx}) => `
+const iconComponentTemplate = (variables, { componentName, jsx }) => `
 import * as React from "react";
 
 interface ${componentName}Props extends React.SVGProps<SVGSVGElement> {
@@ -100,47 +100,64 @@ function cleanSvgJsx(jsCode) {
   return cleaned.trim();
 }
 
-async function generateIcons() {
-  await fs.mkdir(outputDir, {recursive: true});
-  const files = await fs.readdir(inputDir);
-  for (const file of files) {
-    if (path.extname(file) === ".svg") {
-      const svgCode = await fs.readFile(path.join(inputDir, file), "utf-8");
-      const componentName = path
-        .basename(file, ".svg")
-        .replace(/^[a-z]|-[a-z]/g, (match) =>
-          match.replace("-", "").toUpperCase()
-        );
-      const jsCode = await transform(
-        svgCode,
-        {
-          icon: true,
-          typescript: true,
-          native: true,
-          exportType: "named",
-        },
-        {componentName}
-      );
+async function getAllSvgFiles(dir) {
+  const entries = await fs.readdir(dir, { withFileTypes: true });
+  let files = [];
 
-      const cleanedJsx = cleanSvgJsx(jsCode);
-
-      const variables = "";
-      const iconComponent = iconComponentTemplate(variables, {
-        componentName,
-        jsx: cleanedJsx,
-      });
-      await fs.writeFile(
-        path.join(outputDir, `${componentName}.tsx`),
-        iconComponent
-      );
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files = files.concat(await getAllSvgFiles(fullPath)); // rekursif
+    } else if (entry.isFile() && fullPath.endsWith(".svg")) {
+      files.push(fullPath);
     }
+  }
+
+  return files;
+}
+
+async function generateIcons() {
+  await fs.mkdir(outputDir, { recursive: true });
+
+  const svgFiles = await getAllSvgFiles(inputDir);
+
+  for (const filePath of svgFiles) {
+    const svgCode = await fs.readFile(filePath, "utf-8");
+
+    const componentName = path
+      .basename(filePath, ".svg")
+      .replace(/^[a-z]|-[a-z]/g, (match) =>
+        match.replace("-", "").toUpperCase()
+      );
+
+    const jsCode = await transform(
+      svgCode,
+      {
+        icon: true,
+        typescript: true,
+        native: true,
+        exportType: "named",
+      },
+      { componentName }
+    );
+
+    const cleanedJsx = cleanSvgJsx(jsCode);
+    const variables = "";
+    const iconComponent = iconComponentTemplate(variables, {
+      componentName,
+      jsx: cleanedJsx,
+    });
+
+    await fs.writeFile(
+      path.join(outputDir, `${componentName}.tsx`),
+      iconComponent
+    );
   }
 }
 
 // For RN
 function cleanSvgForPng(svgCode) {
   let cleaned = svgCode;
-
   cleaned = cleaned.replace(/<path[^>]*>/g, (match) => {
     if (/mask=|clip-path=/.test(match)) return match;
 
@@ -194,22 +211,28 @@ function cleanSvgForPng(svgCode) {
 }
 
 async function generateIconsPng() {
-  await fs.mkdir(outputDirPng, {recursive: true});
-  const files = await fs.readdir(inputDir);
+  await fs.mkdir(outputDirPng, { recursive: true });
 
-  for (const file of files) {
-    if (path.extname(file) !== ".svg") continue;
-
-    const svgCode = await fs.readFile(path.join(inputDir, file), "utf-8");
-
+  const svgFiles = await getAllSvgFiles(inputDir);
+  for (const filePath of svgFiles) {
+    const svgCode = await fs.readFile(filePath, "utf-8");
     const cleanedSvg = cleanSvgForPng(svgCode);
 
     const pngBuffer = await sharp(Buffer.from(cleanedSvg))
-      .resize(200, 200, {fit: "contain", background: {r: 0, g: 0, b: 0, alpha: 1}})
+      .resize(200, 200, {
+        fit: "contain",
+        background: { r: 0, g: 0, b: 0, alpha: 1 },
+      })
       .png()
       .toBuffer();
 
-    const outputFile = path.join(outputDirPng, file.replace(".svg", "_icon.png"));
+    const relativePath = path.relative(inputDir, filePath);
+    const outputFile = path.join(
+      outputDirPng,
+      relativePath.replace(".svg", "_icon.png")
+    );
+
+    await fs.mkdir(path.dirname(outputFile), { recursive: true });
     await fs.writeFile(outputFile, pngBuffer);
     console.log(`Generated PNG: ${outputFile}`);
   }
