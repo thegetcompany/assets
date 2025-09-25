@@ -152,41 +152,41 @@ function cleanSvgForPng(svgCode) {
     const fillVal = fillMatch ? fillMatch[1] : null;
     const strokeVal = strokeMatch ? strokeMatch[1] : null;
 
-    // if (fillVal && !strokeVal) {
-    //   if (fillVal !== "none") {
-    //     newTag = newTag.replace(
-    //       /fill="[^"]*"/,
-    //       'fill="#000000"'
-    //     );
-    //   }
-    // } else if (!fillVal && strokeVal) {
-    //   if (strokeVal !== "none") {
-    //     newTag = newTag.replace(
-    //       /stroke="[^"]*"/,
-    //       'stroke="#000000"'
-    //     );
-    //   }
-    // } else if (fillVal && strokeVal) {
-    //   if (fillVal === "none" && strokeVal !== "none") {
-    //     newTag = newTag.replace(
-    //       /stroke="[^"]*"/,
-    //       'stroke="#000000"'
-    //     );
-    //   } else if (strokeVal === "none" && fillVal !== "none") {
-    //     newTag = newTag.replace(
-    //       /fill="[^"]*"/,
-    //       'fill="#000000"'
-    //     );
-    //   } else if (fillVal === strokeVal) {
-    //     newTag = newTag
-    //       .replace(/fill="[^"]*"/, 'fill="#000000"')
-    //       .replace(/stroke="[^"]*"/, 'stroke="#000000"');
-    //   } else {
-    //     newTag = newTag
-    //       .replace(/stroke="[^"]*"/, 'stroke="#000000"')
-    //       .replace(/fill="[^"]*"/, 'fill="none"');
-    //   }
-    // }
+    if (fillVal && !strokeVal) {
+      if (fillVal !== "none") {
+        newTag = newTag.replace(
+          /fill="[^"]*"/,
+          'fill="#000000"'
+        );
+      }
+    } else if (!fillVal && strokeVal) {
+      if (strokeVal !== "none") {
+        newTag = newTag.replace(
+          /stroke="[^"]*"/,
+          'stroke="#000000"'
+        );
+      }
+    } else if (fillVal && strokeVal) {
+      if (fillVal === "none" && strokeVal !== "none") {
+        newTag = newTag.replace(
+          /stroke="[^"]*"/,
+          'stroke="#000000"'
+        );
+      } else if (strokeVal === "none" && fillVal !== "none") {
+        newTag = newTag.replace(
+          /fill="[^"]*"/,
+          'fill="#000000"'
+        );
+      } else if (fillVal === strokeVal) {
+        newTag = newTag
+          .replace(/fill="[^"]*"/, 'fill="#000000"')
+          .replace(/stroke="[^"]*"/, 'stroke="#000000"');
+      } else {
+        newTag = newTag
+          .replace(/stroke="[^"]*"/, 'stroke="#000000"')
+          .replace(/fill="[^"]*"/, 'fill="none"');
+      }
+    }
     return newTag;
   });
 
