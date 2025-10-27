@@ -8,7 +8,7 @@ export { default as AttachFileAdd } from './assets/images/misc/attach_file_add.s
 export { default as CalendarMonth } from './assets/images/misc/calendar_month.svg';
 export { default as Accessible } from './assets/images/preferences/accessible.svg';
 export { default as Budaya } from './assets/images/preferences/budaya.svg';
-export { default as BusPublicTranportation } from './assets/images/preferences/bus_public_tranportation.svg';
+export { default as BusPublicTransportation } from './assets/images/preferences/bus_public_transportation.svg';
 export { default as CityTour } from './assets/images/preferences/city_tour.svg';
 export { default as CommuteMixedTransportation } from './assets/images/preferences/commute_mixed_transportation.svg';
 export { default as Couple } from './assets/images/preferences/couple.svg';
