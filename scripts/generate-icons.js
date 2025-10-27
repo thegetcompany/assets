@@ -217,5 +217,5 @@ async function generateIconsPng() {
   console.log("All SVGs converted to PNG.");
 }
 
-generateIcons().catch(console.error);
-generateIconsPng().catch(console.error);
+// generateIcons().catch(console.error);
+// generateIconsPng().catch(console.error);

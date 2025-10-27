@@ -1,6 +1,5 @@
 import typescript from "rollup-plugin-typescript2";
 import babel from "@rollup/plugin-babel";
-import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
@@ -13,12 +12,6 @@ export default [
     plugins: [
       peerDepsExternal(),
       resolve({extensions: [".js", ".jsx", ".ts", ".tsx", ".png", ".jpg"]}),
-      commonjs({
-        defaultIsModuleExports: true,
-        namedExports: {
-          react: ["createElement", "Component", "Fragment"],
-        },
-      }),
       typescript({
         tsconfig: "./tsconfig.json",
         clean: true,
@@ -67,12 +60,6 @@ export default [
     plugins: [
       peerDepsExternal(),
       resolve({extensions: [".js", ".jsx", ".ts", ".tsx", ".png", ".jpg"]}),
-      commonjs({
-        defaultIsModuleExports: true,
-        namedExports: {
-          react: ["createElement", "Component", "Fragment"],
-        },
-      }),
       typescript({
         tsconfig: "./tsconfig.json",
         clean: true,
@@ -95,10 +82,9 @@ export default [
       copy({
         targets: [
           {
-            src: "src/assets/images/pngFromSvg/**/*.png",
-            dest: "dist/assets/images/pngFromSvg",
+            src: "src/assets/images/**/*.{png,jpg,svg}",
+            dest: "dist/assets/images",
           },
-          {src: "src/assets/images/*.{png,jpg}", dest: "dist/assets/images"},
         ],
         hook: "buildEnd",
         verbose: true,

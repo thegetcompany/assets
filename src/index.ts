@@ -1,55 +1,26 @@
-// import './check-npmrc';
+// ⚠️ Auto-generated file. Do not edit manually.
 
-// Icons
-export { default as Accessible } from './components/Accessible';
-export { default as Add } from './components/Add';
-export { default as ArrowRight } from './components/ArrowRight';
-export { default as Attach_file_add } from './components/Attach_file_add';
-export { default as Budaya } from './components/Budaya';
-export { default as Bus } from './components/Bus';
-export { default as Calendar_month } from './components/Calendar_month';
-export { default as City_tour } from './components/City_tour';
-export { default as Commute } from './components/Commute';
-export { default as Couple } from './components/Couple';
-export { default as Elderly_woman } from './components/Elderly_woman';
-export { default as Frame } from './components/Frame';
-export { default as GroupFamily } from './components/GroupFamily';
-export { default as GroupFriend } from './components/GroupFriend';
-export { default as Halal } from './components/Halal';
-export { default as KidIcon } from './components/KidIcon';
-export { default as MountainIcon } from './components/MountainIcon';
-export { default as PrivateTransport } from './components/PrivateTransport';
-export { default as Shopping } from './components/Shopping';
-export { default as SoloTraveler } from './components/SoloTraveler';
-
-// Icons png
-export { default as AccessiblePng } from './assets/images/pngFromSvg/accessible_icon.png';
-export { default as AddPng } from './assets/images/pngFromSvg/add_icon.png';
-export { default as ArrowRightPng } from './assets/images/pngFromSvg/arrow-right_icon.png';
-export { default as Attach_file_addPng } from './assets/images/pngFromSvg/attach_file_add_icon.png';
-export { default as BudayaPng } from './assets/images/pngFromSvg/budaya_icon.png';
-export { default as BusPng } from './assets/images/pngFromSvg/bus_icon.png';
-export { default as Calendar_monthPng } from './assets/images/pngFromSvg/calendar_month_icon.png';
-export { default as City_tourPng } from './assets/images/pngFromSvg/city_tour_icon.png';
-export { default as CommutePng } from './assets/images/pngFromSvg/commute_icon.png';
-export { default as CouplePng } from './assets/images/pngFromSvg/couple_icon.png';
-export { default as Elderly_womanPng } from './assets/images/pngFromSvg/elderly_woman_icon.png';
-export { default as FramePng } from './assets/images/pngFromSvg/Frame_icon.png';
-export { default as GroupFamilyPng } from './assets/images/pngFromSvg/group-family_icon.png';
-export { default as GroupFriendPng } from './assets/images/pngFromSvg/group-friend_icon.png';
-export { default as HalalPng } from './assets/images/pngFromSvg/halal_icon.png';
-export { default as KidIconPng } from './assets/images/pngFromSvg/KidIcon_icon.png';
-export { default as MountainIconPng } from './assets/images/pngFromSvg/MountainIcon_icon.png';
-export { default as PrivateTransportPng } from './assets/images/pngFromSvg/private-transport_icon.png';
-export { default as ShoppingPng } from './assets/images/pngFromSvg/shopping_icon.png';
-export { default as SoloTravelerPng } from './assets/images/pngFromSvg/solo-traveler_icon.png';
-
-// Logo
-export { default as Logo } from './assets/images/Logo_lets_getgoing_merah_hitam.png';
-export { default as PersonWithPhone } from './assets/images/personWithPhone.png';
-export { default as newCityTour } from './assets/images/newCityTour.png';
-export { default as newFotografi } from './assets/images/newFotografi.png';
-export { default as newHalal } from './assets/images/newHalal.png';
-export { default as newKuliner } from './assets/images/newKuliner.png';
-export { default as newSejarah } from './assets/images/newSejarah.png';
-export { default as newShopping } from './assets/images/newShopping.png';
+export { default as PersonWithPhone } from './assets/images/illustrations/person_with_phone.svg';
+export { default as LogoMerahHitam } from './assets/images/logo/logo_merah_hitam.svg';
+export { default as Add } from './assets/images/misc/add.svg';
+export { default as ArrowRight } from './assets/images/misc/arrow_right.svg';
+export { default as AttachFileAdd } from './assets/images/misc/attach_file_add.svg';
+export { default as CalendarMonth } from './assets/images/misc/calendar_month.svg';
+export { default as Accessible } from './assets/images/preferences/accessible.svg';
+export { default as Budaya } from './assets/images/preferences/budaya.svg';
+export { default as BusPublicTranportation } from './assets/images/preferences/bus_public_tranportation.svg';
+export { default as CityTour } from './assets/images/preferences/city_tour.svg';
+export { default as CommuteMixedTransportation } from './assets/images/preferences/commute_mixed_transportation.svg';
+export { default as Couple } from './assets/images/preferences/couple.svg';
+export { default as Culinary } from './assets/images/preferences/culinary.svg';
+export { default as ElderlyWoman } from './assets/images/preferences/elderly_woman.svg';
+export { default as GroupFamily } from './assets/images/preferences/group_family.svg';
+export { default as GroupFriend } from './assets/images/preferences/group_friend.svg';
+export { default as Halal } from './assets/images/preferences/halal.svg';
+export { default as History } from './assets/images/preferences/history.svg';
+export { default as KidIcon } from './assets/images/preferences/kid_icon.svg';
+export { default as Mountain } from './assets/images/preferences/mountain.svg';
+export { default as Photography } from './assets/images/preferences/photography.svg';
+export { default as PrivateTransport } from './assets/images/preferences/private_transport.svg';
+export { default as Shopping } from './assets/images/preferences/shopping.svg';
+export { default as SoloTraveler } from './assets/images/preferences/solo_traveler.svg';
