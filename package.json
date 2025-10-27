@@ -1,6 +1,6 @@
 {
   "name": "thegetcompany-assets",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "dist/index.js",
   "react-native": "dist/native.js",
   "module": "dist/index.esm.js",
