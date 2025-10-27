@@ -33,10 +33,6 @@ export default [
       }),
       copy({
         targets: [
-          {
-            src: "src/assets/images/pngFromSvg/**/*.png",
-            dest: "dist/assets/images/pngFromSvg",
-          },
           {src: "src/assets/images/*.{png,jpg}", dest: "dist/assets/images"},
         ],
         hook: "buildEnd",
