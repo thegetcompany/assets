@@ -5,6 +5,7 @@ import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import image from "@rollup/plugin-image";
 import copy from "rollup-plugin-copy";
+import {svgToPngPlugin} from "./script.js";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
 
@@ -80,11 +81,12 @@ export default [
     ],
     plugins: [
       peerDepsExternal(),
+      svgToPngPlugin(),
       resolve({extensions}),
       typescript(tsConfig),
       babel(babelConfig),
       postcss(),
-      image(imageConfig),
+      // image(imageConfig),
       // copy({
       //   targets: [
       //     {
