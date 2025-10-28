@@ -6,39 +6,33 @@ import postcss from "rollup-plugin-postcss";
 import image from "@rollup/plugin-image";
 import copy from "rollup-plugin-copy";
 
+const extensions = [".js", ".jsx", ".ts", ".tsx"];
+
+const babelConfig = {
+  exclude: "node_modules/**",
+  extensions,
+  presets: [
+    "@babel/preset-env",
+    ["@babel/preset-react", {runtime: "automatic"}],
+    "@babel/preset-typescript",
+  ],
+  babelHelpers: "bundled",
+};
+
+const tsConfig = {
+  tsconfig: "./tsconfig.json",
+  clean: true,
+  include: ["src/**/*.{ts,tsx}"],
+};
+
+const imageConfig = {
+  output: "dist/assets/images",
+};
+
 export default [
+  // ----- Web Build -----
   {
     input: "src/index.ts",
-    plugins: [
-      peerDepsExternal(),
-      resolve({extensions: [".js", ".jsx", ".ts", ".tsx", ".png", ".jpg"]}),
-      typescript({
-        tsconfig: "./tsconfig.json",
-        clean: true,
-        include: ["src/**/*.{ts,tsx}"],
-      }),
-      babel({
-        exclude: "node_modules/**",
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-        presets: [
-          "@babel/preset-env",
-          ["@babel/preset-react", {runtime: "automatic"}],
-          "@babel/preset-typescript",
-        ],
-        babelHelpers: "bundled",
-      }),
-      postcss(),
-      image({
-        output: "dist/assets/images",
-      }),
-      copy({
-        targets: [
-          {src: "src/assets/images/*.{png,jpg}", dest: "dist/assets/images"},
-        ],
-        hook: "buildEnd",
-        verbose: true,
-      }),
-    ],
     output: [
       {
         file: "dist/index.cjs.js",
@@ -46,45 +40,62 @@ export default [
         sourcemap: true,
         exports: "named",
       },
-      {file: "dist/index.esm.js", format: "esm", sourcemap: true},
+      {
+        file: "dist/index.esm.js",
+        format: "esm",
+        sourcemap: true,
+        assetFileNames: "assets/images/[name][extname]",
+      },
     ],
     external: ["react", "react-dom", "react-native", "react-native-svg"],
-  },
-  {
-    input: "src/native.ts",
-    output: [{file: "dist/native.js", format: "cjs"}],
     plugins: [
       peerDepsExternal(),
-      resolve({extensions: [".js", ".jsx", ".ts", ".tsx", ".png", ".jpg"]}),
-      typescript({
-        tsconfig: "./tsconfig.json",
-        clean: true,
-        include: ["src/**/*.{ts,tsx}"],
-      }),
-      babel({
-        exclude: "node_modules/**",
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-        presets: [
-          "@babel/preset-env",
-          ["@babel/preset-react", {runtime: "automatic"}],
-          "@babel/preset-typescript",
-        ],
-        babelHelpers: "bundled",
-      }),
+      resolve({extensions}),
+      typescript(tsConfig),
+      babel(babelConfig),
       postcss(),
-      image({
-        output: "dist/assets/images",
-      }),
-      copy({
-        targets: [
-          {
-            src: "src/assets/images/**/*.{png,jpg,svg}",
-            dest: "dist/assets/images",
-          },
-        ],
-        hook: "buildEnd",
-        verbose: true,
-      }),
+      image(imageConfig),
+      // copy({
+      //   targets: [
+      //     {
+      //       src: "src/assets/images/*.{png,jpg}",
+      //       dest: "dist",
+      //     },
+      //   ],
+      //   hook: "writeBundle",
+      //   verbose: true,
+      //   flatten: false,
+      // }),
+    ],
+  },
+
+  // ----- Native Build -----
+  {
+    input: "src/native.ts",
+    output: [
+      {
+        file: "dist/native.js",
+        format: "cjs",
+      },
+    ],
+    plugins: [
+      peerDepsExternal(),
+      resolve({extensions}),
+      typescript(tsConfig),
+      babel(babelConfig),
+      postcss(),
+      image(imageConfig),
+      // copy({
+      //   targets: [
+      //     {
+      //       src: "src/assets/images/**/*.{png,jpg,svg}",
+      //       dest: "dist",
+      //     },
+      //   ],
+      //   hook: "writeBundle",
+      //   verbose: true,
+      //   flatten: false,
+      // }),
     ],
   },
 ];
