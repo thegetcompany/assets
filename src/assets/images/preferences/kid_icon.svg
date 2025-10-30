@@ -11,5 +11,5 @@
           fill="none" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
   </mask>
 
-  <circle cx="10" cy="10" r="8.333" fill="#8791A9" mask="url(#cutout-mask)" />
+  <circle cx="10" cy="10" r="8.333" fill="#CC0000" mask="url(#cutout-mask)" />
 </svg>
