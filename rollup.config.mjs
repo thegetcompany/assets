@@ -4,7 +4,6 @@ import resolve from "@rollup/plugin-node-resolve";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import image from "@rollup/plugin-image";
-import copy from "rollup-plugin-copy";
 import {svgToPngPlugin} from "./script.js";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
@@ -56,17 +55,6 @@ export default [
       babel(babelConfig),
       postcss(),
       image(imageConfig),
-      // copy({
-      //   targets: [
-      //     {
-      //       src: "src/assets/images/*.{png,jpg}",
-      //       dest: "dist",
-      //     },
-      //   ],
-      //   hook: "writeBundle",
-      //   verbose: true,
-      //   flatten: false,
-      // }),
     ],
   },
 
@@ -86,18 +74,6 @@ export default [
       typescript(tsConfig),
       babel(babelConfig),
       postcss(),
-      // image(imageConfig),
-      // copy({
-      //   targets: [
-      //     {
-      //       src: "src/assets/images/**/*.{png,jpg,svg}",
-      //       dest: "dist",
-      //     },
-      //   ],
-      //   hook: "writeBundle",
-      //   verbose: true,
-      //   flatten: false,
-      // }),
     ],
   },
 ];

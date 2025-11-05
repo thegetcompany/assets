@@ -20,7 +20,10 @@
     "build:types": "tsc --project tsconfig.json --emitDeclarationOnly --outDir dist",
     "build:rollup": "rollup -c",
     "build": "npm run build:types && npm run build:rollup",
-    "publish:package": "npm run build && npm version patch && npm publish --access public"
+    "publish:package": "npm run build && npm publish --access public",
+    "release:patch": "npm version patch && npm run publish:package",
+    "release:minor": "npm version minor && npm run publish:package",
+    "release:major": "npm version major && npm run publish:package"
   },
   "publishConfig": {
     "access": "public",
@@ -66,6 +69,8 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "firebase": "^12.5.0",
     "rollup-plugin-copy": "^3.5.0",
     "sharp": "^0.34.4"
   }
