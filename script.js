@@ -3,7 +3,7 @@ import sharp from "sharp";
 import path from "path";
 
 export function svgToPngPlugin({
-  size = 200,
+  size = 150,
 } = {}) {
   return {
     name: "svg-to-png",

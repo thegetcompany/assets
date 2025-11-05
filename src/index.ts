@@ -321,3 +321,5 @@ export { default as Mountain } from './assets/images/preferences/mountain.svg';
 export { default as Photography } from './assets/images/preferences/photography.svg';
 export { default as Shopping } from './assets/images/preferences/shopping.svg';
 export { default as SoloTraveler } from './assets/images/preferences/solo_traveler.svg';
+
+export { countries } from './assets/data/countries.js';

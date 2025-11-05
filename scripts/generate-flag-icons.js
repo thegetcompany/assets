@@ -1,15 +1,9 @@
 const fs = require("fs");
 const path = require("path");
-const { initializeApp } = require("firebase/app");
-const {
-  getStorage,
-  ref,
-  listAll,
-  getDownloadURL,
-} = require("firebase/storage");
+const {initializeApp} = require("firebase/app");
+const {getStorage, ref, listAll, getDownloadURL} = require("firebase/storage");
 require("dotenv").config();
 
-// --- Firebase Config ---
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
@@ -23,19 +17,17 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app, `gs://${firebaseConfig.storageBucket}`);
-
-// folder output
 const outputDir = path.join(__dirname, "../src/assets/images/flags");
 
 async function generateFlagIcons() {
-  console.log("Mengambil daftar icon dari Firebase Storage...");
+  console.log("🚀 Mulai mengambil daftar ikon dari Firebase Storage...");
 
-  // Misal semua icon kamu disimpan di folder "flags/"
   const flagsRef = ref(storage, "flagIcons");
   const result = await listAll(flagsRef);
 
   if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
+    fs.mkdirSync(outputDir, {recursive: true});
+    console.log(`📁 Folder output dibuat: ${outputDir}`);
   }
 
   let total = 0;
@@ -44,19 +36,24 @@ async function generateFlagIcons() {
     const fileName = item.name;
     const code = path.basename(fileName, path.extname(fileName)).toLowerCase();
 
-    const downloadUrl = await getDownloadURL(item);
-    const res = await fetch(downloadUrl);
-    const buffer = await res.arrayBuffer();
+    process.stdout.write(`⬇️  Mengunduh ${fileName}... `);
 
-    const localPath = path.join(outputDir, fileName);
-    fs.writeFileSync(localPath, Buffer.from(buffer));
-
-    total++;
+    try {
+      const downloadUrl = await getDownloadURL(item);
+      const res = await fetch(downloadUrl);
+      const buffer = await res.arrayBuffer();
+      const localPath = path.join(outputDir, fileName);
+      fs.writeFileSync(localPath, Buffer.from(buffer));
+      total++;
+      console.log("✅ selesai");
+    } catch (err) {
+      console.log(`❌ gagal (${err.message})`);
+    }
   }
 
-  console.log(`✅ Berhasil download ${total} icon dari Storage`);
+  console.log(`\n🏁 Selesai: ${total} ikon berhasil diunduh ke ${outputDir}`);
 }
 
 generateFlagIcons().catch((err) => {
-  console.error("❌ Gagal generate icon:", err);
+  console.error("🔥 Terjadi kesalahan:", err);
 });
