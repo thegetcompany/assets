@@ -15,7 +15,14 @@ const schemaOutput = {
     currencySymbol: {type: SchemaType.STRING},
     currencyName: {type: SchemaType.STRING},
     emojiFlag: {type: SchemaType.STRING},
-    continent: {type: SchemaType.STRING},
+    continent: {
+      type: SchemaType.OBJECT,
+      properties: {
+        name: {type: SchemaType.STRING},
+        indonesianName: {type: SchemaType.STRING},
+      },
+      required: ["name", "indonesianName"],
+    },
     subregion: {type: SchemaType.STRING},
     callingCode: {type: SchemaType.STRING},
     languages: {
@@ -2677,7 +2684,10 @@ Example Data Output:
   "currencySymbol": "Rp",
   "currencyName": "Rupiah",
   "emojiFlag": "🇮🇩",
-  "continent": "Asia",
+  "continent": {
+    "name": "Asia",
+    "indonesianName": "Asia"
+  },
   "subregion": "South-Eastern Asia",
   "callingCode": "+62",
   "languages": [

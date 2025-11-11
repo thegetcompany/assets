@@ -11,7 +11,10 @@ export const countries = {
     "currencySymbol": "₽",
     "currencyName": "Ruble",
     "emojiFlag": "🇦🇧",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+7 840, +7 940",
     "languages": [
@@ -38,8 +41,11 @@ export const countries = {
     "currencySymbol": "؋",
     "currencyName": "Afghani",
     "emojiFlag": "🇦🇫",
-    "continent": "Asia",
-    "subregion": "Central Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
+    "subregion": "Southern Asia",
     "callingCode": "+93",
     "languages": [
       "ps",
@@ -65,7 +71,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇦🇽",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+358",
     "languages": [
@@ -90,7 +99,10 @@ export const countries = {
     "currencySymbol": "L",
     "currencyName": "Lek",
     "emojiFlag": "🇦🇱",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+355",
     "languages": [
@@ -115,7 +127,10 @@ export const countries = {
     "currencySymbol": "د.ج",
     "currencyName": "Algerian Dinar",
     "emojiFlag": "🇩🇿",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+213",
     "languages": [
@@ -140,7 +155,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇦🇸",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+1684",
     "languages": [
@@ -166,7 +184,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇦🇩",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+376",
     "languages": [
@@ -191,7 +212,10 @@ export const countries = {
     "currencySymbol": "Kz",
     "currencyName": "Kwanza",
     "emojiFlag": "🇦🇴",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+244",
     "languages": [
@@ -216,7 +240,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "East Caribbean Dollar",
     "emojiFlag": "🇦🇮",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1-264",
     "languages": [
@@ -241,9 +268,12 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "East Caribbean Dollar",
     "emojiFlag": "🇦🇬",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
-    "callingCode": "+1-268",
+    "callingCode": "+1268",
     "languages": [
       "en"
     ],
@@ -266,7 +296,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Argentine Peso",
     "emojiFlag": "🇦🇷",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+54",
     "languages": [
@@ -279,14 +312,15 @@ export const countries = {
     "timezones": [
       "America/Argentina/Buenos_Aires",
       "America/Argentina/Cordoba",
+      "America/Argentina/Salta",
+      "America/Argentina/Jujuy",
+      "America/Argentina/Tucuman",
       "America/Argentina/Catamarca",
       "America/Argentina/La_Rioja",
-      "America/Argentina/Mendoza",
-      "America/Argentina/Rio_Gallegos",
-      "America/Argentina/Salta",
       "America/Argentina/San_Juan",
+      "America/Argentina/Mendoza",
       "America/Argentina/San_Luis",
-      "America/Argentina/Tucuman",
+      "America/Argentina/Rio_Gallegos",
       "America/Argentina/Ushuaia"
     ],
     "tld": ".ar"
@@ -301,7 +335,10 @@ export const countries = {
     "currencySymbol": "֏",
     "currencyName": "Armenian Dram",
     "emojiFlag": "🇦🇲",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+374",
     "languages": [
@@ -326,7 +363,10 @@ export const countries = {
     "currencySymbol": "ƒ",
     "currencyName": "Aruban Florin",
     "emojiFlag": "🇦🇼",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+297",
     "languages": [
@@ -352,7 +392,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Australian Dollar",
     "emojiFlag": "🇦🇺",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Australia and New Zealand",
     "callingCode": "+61",
     "languages": [
@@ -373,7 +416,8 @@ export const countries = {
       "Australia/Lindeman",
       "Australia/Adelaide",
       "Australia/Darwin",
-      "Australia/Perth"
+      "Australia/Perth",
+      "Australia/Eucla"
     ],
     "tld": ".au"
   },
@@ -387,7 +431,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇦🇹",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Central Europe",
     "callingCode": "+43",
     "languages": [
@@ -412,7 +459,10 @@ export const countries = {
     "currencySymbol": "₼",
     "currencyName": "Azerbaijani Manat",
     "emojiFlag": "🇦🇿",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+994",
     "languages": [
@@ -437,7 +487,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇵🇹",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+351",
     "languages": [
@@ -462,9 +515,12 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Bahamian Dollar",
     "emojiFlag": "🇧🇸",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
-    "callingCode": "+1-242",
+    "callingCode": "+1242",
     "languages": [
       "en"
     ],
@@ -487,7 +543,10 @@ export const countries = {
     "currencySymbol": ".د.ب",
     "currencyName": "Bahraini Dinar",
     "emojiFlag": "🇧🇭",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+973",
     "languages": [
@@ -512,7 +571,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇪🇸",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+34",
     "languages": [
@@ -537,7 +599,10 @@ export const countries = {
     "currencySymbol": "৳",
     "currencyName": "Taka",
     "emojiFlag": "🇧🇩",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Southern Asia",
     "callingCode": "+880",
     "languages": [
@@ -562,11 +627,14 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Barbadian Dollar",
     "emojiFlag": "🇧🇧",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1-246",
     "languages": [
-      "en-BB"
+      "en"
     ],
     "currencyDecimals": 2,
     "iso2": "BB",
@@ -586,8 +654,11 @@ export const countries = {
     "currencyCode": "EUR",
     "currencySymbol": "€",
     "currencyName": "Euro",
-    "emojiFlag": "undefined",
-    "continent": "Europe",
+    "emojiFlag": "🏳️‍EUS",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+34",
     "languages": [
@@ -613,7 +684,10 @@ export const countries = {
     "currencySymbol": "Br",
     "currencyName": "Belarusian Ruble",
     "emojiFlag": "🇧🇾",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Eastern Europe",
     "callingCode": "+375",
     "languages": [
@@ -639,7 +713,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇧🇪",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Western Europe",
     "callingCode": "+32",
     "languages": [
@@ -666,7 +743,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Belize Dollar",
     "emojiFlag": "🇧🇿",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Central America",
     "callingCode": "+501",
     "languages": [
@@ -692,7 +772,10 @@ export const countries = {
     "currencySymbol": "CFA",
     "currencyName": "West African CFA Franc",
     "emojiFlag": "🇧🇯",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+229",
     "languages": [
@@ -717,7 +800,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Bermudian Dollar",
     "emojiFlag": "🇧🇲",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "North America",
     "callingCode": "+1441",
     "languages": [
@@ -742,8 +828,11 @@ export const countries = {
     "currencySymbol": "Nu.",
     "currencyName": "Ngultrum",
     "emojiFlag": "🇧🇹",
-    "continent": "Asia",
-    "subregion": "South Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
+    "subregion": "Southern Asia",
     "callingCode": "+975",
     "languages": [
       "dz"
@@ -751,7 +840,7 @@ export const countries = {
     "currencyDecimals": 2,
     "iso2": "BT",
     "iso3": "BTN",
-    "numericCode": "056",
+    "numericCode": "064",
     "timezones": [
       "Asia/Thimphu"
     ],
@@ -767,7 +856,10 @@ export const countries = {
     "currencySymbol": "Bs.",
     "currencyName": "Boliviano",
     "emojiFlag": "🇧🇴",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+591",
     "languages": [
@@ -794,7 +886,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇧🇶",
-    "continent": "Americas",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+599",
     "languages": [
@@ -819,8 +914,11 @@ export const countries = {
     "currencySymbol": "KM",
     "currencyName": "Convertible Mark",
     "emojiFlag": "🇧🇦",
-    "continent": "Europe",
-    "subregion": "Southeast Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "Southern Europe",
     "callingCode": "+387",
     "languages": [
       "bs",
@@ -846,7 +944,10 @@ export const countries = {
     "currencySymbol": "P",
     "currencyName": "Pula",
     "emojiFlag": "🇧🇼",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Southern Africa",
     "callingCode": "+267",
     "languages": [
@@ -872,7 +973,10 @@ export const countries = {
     "currencySymbol": "R$",
     "currencyName": "Brazilian Real",
     "emojiFlag": "🇧🇷",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+55",
     "languages": [
@@ -886,17 +990,18 @@ export const countries = {
       "America/Araguaina",
       "America/Bahia",
       "America/Belem",
-      "America/Boa Vista",
-      "America/Campo Grande",
+      "America/Boa_Vista",
+      "America/Campo_Grande",
       "America/Cuiaba",
+      "America/Eirunepe",
       "America/Fortaleza",
       "America/Maceio",
       "America/Manaus",
       "America/Noronha",
-      "America/Porto Velho",
+      "America/Porto_Velho",
       "America/Recife",
-      "America/Rio Branco",
-      "America/Sao Paulo"
+      "America/Rio_Branco",
+      "America/Sao_Paulo"
     ],
     "tld": ".br"
   },
@@ -910,7 +1015,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Canadian Dollar",
     "emojiFlag": "🇨🇦",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "North America",
     "callingCode": "+1",
     "languages": [
@@ -922,7 +1030,8 @@ export const countries = {
     "numericCode": "124",
     "timezones": [
       "America/Vancouver",
-      "America/Edmonton"
+      "America/Dawson_Creek",
+      "America/Fort_Nelson"
     ],
     "tld": ".ca"
   },
@@ -936,7 +1045,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇮🇴",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+246",
     "languages": [
@@ -961,7 +1073,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇻🇬",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1284",
     "languages": [
@@ -986,7 +1101,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Brunei Dollar",
     "emojiFlag": "🇧🇳",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+673",
     "languages": [
@@ -1011,8 +1129,11 @@ export const countries = {
     "currencySymbol": "лв",
     "currencyName": "Bulgarian Lev",
     "emojiFlag": "🇧🇬",
-    "continent": "Europe",
-    "subregion": "Eastern Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "Southeast Europe",
     "callingCode": "+359",
     "languages": [
       "bg"
@@ -1036,7 +1157,10 @@ export const countries = {
     "currencySymbol": "CFA",
     "currencyName": "West African CFA Franc",
     "emojiFlag": "🇧🇫",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+226",
     "languages": [
@@ -1062,7 +1186,10 @@ export const countries = {
     "currencySymbol": "FBu",
     "currencyName": "Burundian Franc",
     "emojiFlag": "🇧🇮",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+257",
     "languages": [
@@ -1088,7 +1215,10 @@ export const countries = {
     "currencySymbol": "៛",
     "currencyName": "Riel",
     "emojiFlag": "🇰🇭",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+855",
     "languages": [
@@ -1113,7 +1243,10 @@ export const countries = {
     "currencySymbol": "FCFA",
     "currencyName": "Central African CFA Franc",
     "emojiFlag": "🇨🇲",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+237",
     "languages": [
@@ -1139,7 +1272,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Canadian Dollar",
     "emojiFlag": "🇨🇦",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "North America",
     "callingCode": "+1",
     "languages": [
@@ -1158,10 +1294,18 @@ export const countries = {
       "America/Goose_Bay",
       "America/Toronto",
       "America/Iqaluit",
+      "America/Pangnirtung",
+      "America/Atikokan",
+      "America/Rankin_Inlet",
       "America/Winnipeg",
+      "America/Rainy_River",
       "America/Regina",
       "America/Swift_Current",
       "America/Edmonton",
+      "America/Cambridge_Bay",
+      "America/Yellowknife",
+      "America/Inuvik",
+      "America/Creston",
       "America/Vancouver",
       "America/Whitehorse"
     ],
@@ -1177,16 +1321,19 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇪🇸",
-    "continent": "Africa",
-    "subregion": "Western Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
+    "subregion": "Southern Europe",
     "callingCode": "+34",
     "languages": [
       "es"
     ],
     "currencyDecimals": 2,
     "iso2": "ES",
-    "iso3": "NULL",
-    "numericCode": "NULL",
+    "iso3": "ESP",
+    "numericCode": "724",
     "timezones": [
       "Atlantic/Canary"
     ],
@@ -1202,7 +1349,10 @@ export const countries = {
     "currencySymbol": "Esc",
     "currencyName": "Cape Verdean Escudo",
     "emojiFlag": "🇨🇻",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+238",
     "languages": [
@@ -1227,7 +1377,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Cayman Islands Dollar",
     "emojiFlag": "🇰🇾",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1345",
     "languages": [
@@ -1252,7 +1405,10 @@ export const countries = {
     "currencySymbol": "FCFA",
     "currencyName": "Central African CFA Franc",
     "emojiFlag": "🇨🇫",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+236",
     "languages": [
@@ -1278,7 +1434,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇪🇸",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+34",
     "languages": [
@@ -1286,8 +1445,8 @@ export const countries = {
     ],
     "currencyDecimals": 2,
     "iso2": "ES",
-    "iso3": "CEU",
-    "numericCode": "634",
+    "iso3": "ESP",
+    "numericCode": "724",
     "timezones": [
       "Africa/Ceuta"
     ],
@@ -1303,7 +1462,10 @@ export const countries = {
     "currencySymbol": "FCFA",
     "currencyName": "Central African CFA Franc",
     "emojiFlag": "🇹🇩",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+235",
     "languages": [
@@ -1329,7 +1491,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Chilean Peso",
     "emojiFlag": "🇨🇱",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+56",
     "languages": [
@@ -1355,7 +1520,10 @@ export const countries = {
     "currencySymbol": "¥",
     "currencyName": "Yuan",
     "emojiFlag": "🇨🇳",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Eastern Asia",
     "callingCode": "+86",
     "languages": [
@@ -1381,7 +1549,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Australian Dollar",
     "emojiFlag": "🇨🇽",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Australia and New Zealand",
     "callingCode": "+61",
     "languages": [
@@ -1405,8 +1576,11 @@ export const countries = {
     "currencyCode": "AUD",
     "currencySymbol": "$",
     "currencyName": "Australian Dollar",
-    "emojiFlag": "🇨🇨",
-    "continent": "Oceania",
+    "emojiFlag": "🇦🇺",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Australia and New Zealand",
     "callingCode": "+61",
     "languages": [
@@ -1431,13 +1605,16 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Colombian Peso",
     "emojiFlag": "🇨🇴",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+57",
     "languages": [
       "es"
     ],
-    "currencyDecimals": 2,
+    "currencyDecimals": 0,
     "iso2": "CO",
     "iso3": "COL",
     "numericCode": "170",
@@ -1456,7 +1633,10 @@ export const countries = {
     "currencySymbol": "CF",
     "currencyName": "Comorian Franc",
     "emojiFlag": "🇰🇲",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+269",
     "languages": [
@@ -1468,7 +1648,7 @@ export const countries = {
     "iso3": "COM",
     "numericCode": "174",
     "timezones": [
-      "Indian/Comoro"
+      "Africa/Moroni"
     ],
     "tld": ".km"
   },
@@ -1482,7 +1662,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "New Zealand Dollar",
     "emojiFlag": "🇨🇰",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+682",
     "languages": [
@@ -1508,7 +1691,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇫🇷",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Western Europe",
     "callingCode": "+33",
     "languages": [
@@ -1516,7 +1702,7 @@ export const countries = {
     ],
     "currencyDecimals": 2,
     "iso2": "FR",
-    "iso3": "FR",
+    "iso3": "FRA",
     "numericCode": "250",
     "timezones": [
       "Europe/Paris"
@@ -1533,7 +1719,10 @@ export const countries = {
     "currencySymbol": "₡",
     "currencyName": "Costa Rican Colón",
     "emojiFlag": "🇨🇷",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Central America",
     "callingCode": "+506",
     "languages": [
@@ -1558,7 +1747,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇭🇷",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+385",
     "languages": [
@@ -1567,7 +1759,7 @@ export const countries = {
     "currencyDecimals": 2,
     "iso2": "HR",
     "iso3": "HRV",
-    "numericCode": "191",
+    "numericCode": "688",
     "timezones": [
       "Europe/Zagreb"
     ],
@@ -1583,7 +1775,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Cuban Peso",
     "emojiFlag": "🇨🇺",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+53",
     "languages": [
@@ -1608,7 +1803,10 @@ export const countries = {
     "currencySymbol": "ƒ",
     "currencyName": "Netherlands Antillean Guilder",
     "emojiFlag": "🇨🇼",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+599",
     "languages": [
@@ -1634,7 +1832,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇨🇾",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+357",
     "languages": [
@@ -1661,12 +1862,14 @@ export const countries = {
     "currencySymbol": "Kč",
     "currencyName": "Czech Koruna",
     "emojiFlag": "🇨🇿",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Central Europe",
     "callingCode": "+420",
     "languages": [
-      "cs",
-      "sk"
+      "cs"
     ],
     "currencyDecimals": 2,
     "iso2": "CZ",
@@ -1687,7 +1890,10 @@ export const countries = {
     "currencySymbol": "FC",
     "currencyName": "Congolese Franc",
     "emojiFlag": "🇨🇩",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+243",
     "languages": [
@@ -1713,7 +1919,10 @@ export const countries = {
     "currencySymbol": "kr",
     "currencyName": "Danish Krone",
     "emojiFlag": "🇩🇰",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+45",
     "languages": [
@@ -1738,14 +1947,17 @@ export const countries = {
     "currencySymbol": "Fdj",
     "currencyName": "Djiboutian Franc",
     "emojiFlag": "🇩🇯",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+253",
     "languages": [
       "fr",
       "ar"
     ],
-    "currencyDecimals": 2,
+    "currencyDecimals": 0,
     "iso2": "DJ",
     "iso3": "DJI",
     "numericCode": "262",
@@ -1764,9 +1976,12 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "East Caribbean Dollar",
     "emojiFlag": "🇩🇲",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
-    "callingCode": "+1-767",
+    "callingCode": "+1767",
     "languages": [
       "en"
     ],
@@ -1789,9 +2004,12 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Dominican Peso",
     "emojiFlag": "🇩🇴",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
-    "callingCode": "+1809",
+    "callingCode": "+1-809, +1-829, +1-849",
     "languages": [
       "es"
     ],
@@ -1814,12 +2032,15 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇹🇱",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+670",
     "languages": [
-      "tet",
-      "por"
+      "pt",
+      "tet"
     ],
     "currencyDecimals": 2,
     "iso2": "TL",
@@ -1840,7 +2061,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇪🇨",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+593",
     "languages": [
@@ -1866,7 +2090,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Egyptian Pound",
     "emojiFlag": "🇪🇬",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+20",
     "languages": [
@@ -1891,7 +2118,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Pound Sterling",
     "emojiFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Western Europe",
     "callingCode": "+44",
     "languages": [
@@ -1916,7 +2146,10 @@ export const countries = {
     "currencySymbol": "FCFA",
     "currencyName": "Central African CFA Franc",
     "emojiFlag": "🇬🇶",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+240",
     "languages": [
@@ -1943,7 +2176,10 @@ export const countries = {
     "currencySymbol": "Nfk",
     "currencyName": "Nakfa",
     "emojiFlag": "🇪🇷",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+291",
     "languages": [
@@ -1970,7 +2206,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇪🇪",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+372",
     "languages": [
@@ -1995,16 +2234,14 @@ export const countries = {
     "currencySymbol": "Br",
     "currencyName": "Ethiopian Birr",
     "emojiFlag": "🇪🇹",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+251",
     "languages": [
-      "am",
-      "om",
-      "ti",
-      "so",
-      "sid",
-      "aa"
+      "am"
     ],
     "currencyDecimals": 2,
     "iso2": "ET",
@@ -2025,9 +2262,12 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇪🇺",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Europe",
-    "callingCode": "+33",
+    "callingCode": "+388",
     "languages": [
       "de",
       "fr",
@@ -2040,9 +2280,34 @@ export const countries = {
     "numericCode": "978",
     "timezones": [
       "Europe/Amsterdam",
-      "Europe/Paris",
+      "Europe/Andorra",
+      "Europe/Athens",
+      "Europe/Belgrade",
       "Europe/Berlin",
-      "Europe/Rome"
+      "Europe/Brussels",
+      "Europe/Bucharest",
+      "Europe/Budapest",
+      "Europe/Copenhagen",
+      "Europe/Dublin",
+      "Europe/Helsinki",
+      "Europe/Kiev",
+      "Europe/Lisbon",
+      "Europe/Ljubljana",
+      "Europe/London",
+      "Europe/Madrid",
+      "Europe/Paris",
+      "Europe/Prague",
+      "Europe/Rome",
+      "Europe/Sarajevo",
+      "Europe/Skopje",
+      "Europe/Sofia",
+      "Europe/Stockholm",
+      "Europe/Vienna",
+      "Europe/Warsaw",
+      "Europe/Zagreb",
+      "Europe/Zurich",
+      "Africa/Ceuta",
+      "Atlantic/Azores"
     ],
     "tld": ".eu"
   },
@@ -2056,7 +2321,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Falkland Islands Pound",
     "emojiFlag": "🇫🇰",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+500",
     "languages": [
@@ -2081,7 +2349,10 @@ export const countries = {
     "currencySymbol": "kr",
     "currencyName": "Faroese Króna",
     "emojiFlag": "🇫🇴",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+298",
     "languages": [
@@ -2106,13 +2377,16 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Fijian Dollar",
     "emojiFlag": "🇫🇯",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Melanesia",
     "callingCode": "+679",
     "languages": [
-      "en",
       "fj",
-      "hif"
+      "en",
+      "hi"
     ],
     "currencyDecimals": 2,
     "iso2": "FJ",
@@ -2133,7 +2407,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇫🇮",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+358",
     "languages": [
@@ -2159,7 +2436,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇫🇷",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Western Europe",
     "callingCode": "+33",
     "languages": [
@@ -2184,7 +2464,10 @@ export const countries = {
     "currencySymbol": "₣",
     "currencyName": "CFP Franc",
     "emojiFlag": "🇵🇫",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+689",
     "languages": [
@@ -2209,7 +2492,10 @@ export const countries = {
     "currencySymbol": "FCFA",
     "currencyName": "Central African CFA Franc",
     "emojiFlag": "🇬🇦",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+241",
     "languages": [
@@ -2234,7 +2520,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇪🇨",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+593",
     "languages": [
@@ -2259,7 +2548,10 @@ export const countries = {
     "currencySymbol": "D",
     "currencyName": "Dalasi",
     "emojiFlag": "🇬🇲",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+220",
     "languages": [
@@ -2284,7 +2576,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇩🇪",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Western Europe",
     "callingCode": "+49",
     "languages": [
@@ -2310,7 +2605,10 @@ export const countries = {
     "currencySymbol": "₵",
     "currencyName": "Cedi",
     "emojiFlag": "🇬🇭",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+233",
     "languages": [
@@ -2338,7 +2636,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Gibraltar Pound",
     "emojiFlag": "🇬🇮",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+350",
     "languages": [
@@ -2363,7 +2664,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇬🇷",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+30",
     "languages": [
@@ -2388,13 +2692,14 @@ export const countries = {
     "currencySymbol": "kr",
     "currencyName": "Danish Krone",
     "emojiFlag": "🇬🇱",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "North America",
     "callingCode": "+299",
     "languages": [
-      "kl",
-      "da",
-      "en"
+      "kl"
     ],
     "currencyDecimals": 2,
     "iso2": "GL",
@@ -2403,7 +2708,8 @@ export const countries = {
     "timezones": [
       "America/Godthab",
       "America/Danmarkshavn",
-      "America/Scoresbysund"
+      "America/Scoresbysund",
+      "America/Thule"
     ],
     "tld": ".gl"
   },
@@ -2417,9 +2723,12 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "East Caribbean Dollar",
     "emojiFlag": "🇬🇩",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
-    "callingCode": "+1-473",
+    "callingCode": "+1473",
     "languages": [
       "en"
     ],
@@ -2442,7 +2751,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇬🇺",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Micronesia",
     "callingCode": "+1671",
     "languages": [
@@ -2468,7 +2780,10 @@ export const countries = {
     "currencySymbol": "Q",
     "currencyName": "Quetzal",
     "emojiFlag": "🇬🇹",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Central America",
     "callingCode": "+502",
     "languages": [
@@ -2493,7 +2808,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Guernsey Pound",
     "emojiFlag": "🇬🇬",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+44",
     "languages": [
@@ -2519,8 +2837,11 @@ export const countries = {
     "currencySymbol": "CFA",
     "currencyName": "West African CFA Franc",
     "emojiFlag": "🇬🇼",
-    "continent": "Africa",
-    "subregion": "Sub-Saharan Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
+    "subregion": "Western Africa",
     "callingCode": "+245",
     "languages": [
       "pt"
@@ -2544,12 +2865,14 @@ export const countries = {
     "currencySymbol": "FG",
     "currencyName": "Guinean Franc",
     "emojiFlag": "🇬🇳",
-    "continent": "Africa",
-    "subregion": "Western Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
+    "subregion": "Sub-Saharan Africa",
     "callingCode": "+224",
     "languages": [
-      "fr",
-      "ff"
+      "fr"
     ],
     "currencyDecimals": 0,
     "iso2": "GN",
@@ -2570,7 +2893,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Guyanese Dollar",
     "emojiFlag": "🇬🇾",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+592",
     "languages": [
@@ -2595,7 +2921,10 @@ export const countries = {
     "currencySymbol": "G",
     "currencyName": "Gourde",
     "emojiFlag": "🇭🇹",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+509",
     "languages": [
@@ -2621,11 +2950,15 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇺🇸",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Polynesia",
     "callingCode": "+1",
     "languages": [
-      "en"
+      "en",
+      "haw"
     ],
     "currencyDecimals": 2,
     "iso2": "US",
@@ -2646,7 +2979,10 @@ export const countries = {
     "currencySymbol": "L",
     "currencyName": "Lempira",
     "emojiFlag": "🇭🇳",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Central America",
     "callingCode": "+504",
     "languages": [
@@ -2671,8 +3007,11 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Hong Kong Dollar",
     "emojiFlag": "🇭🇰",
-    "continent": "Asia",
-    "subregion": "East Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
+    "subregion": "Eastern Asia",
     "callingCode": "+852",
     "languages": [
       "zh",
@@ -2697,7 +3036,10 @@ export const countries = {
     "currencySymbol": "Ft",
     "currencyName": "Forint",
     "emojiFlag": "🇭🇺",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Central Europe",
     "callingCode": "+36",
     "languages": [
@@ -2722,7 +3064,10 @@ export const countries = {
     "currencySymbol": "kr",
     "currencyName": "Icelandic Króna",
     "emojiFlag": "🇮🇸",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+354",
     "languages": [
@@ -2747,7 +3092,10 @@ export const countries = {
     "currencySymbol": "₹",
     "currencyName": "Indian Rupee",
     "emojiFlag": "🇮🇳",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Southern Asia",
     "callingCode": "+91",
     "languages": [
@@ -2773,7 +3121,10 @@ export const countries = {
     "currencySymbol": "Rp",
     "currencyName": "Rupiah",
     "emojiFlag": "🇮🇩",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+62",
     "languages": [
@@ -2801,7 +3152,10 @@ export const countries = {
     "currencySymbol": "﷼",
     "currencyName": "Iranian Rial",
     "emojiFlag": "🇮🇷",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Southern Asia",
     "callingCode": "+98",
     "languages": [
@@ -2826,7 +3180,10 @@ export const countries = {
     "currencySymbol": "ع.د",
     "currencyName": "Iraqi Dinar",
     "emojiFlag": "🇮🇶",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+964",
     "languages": [
@@ -2852,7 +3209,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇮🇪",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+353",
     "languages": [
@@ -2878,7 +3238,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Manx Pound",
     "emojiFlag": "🇮🇲",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+44",
     "languages": [
@@ -2904,7 +3267,10 @@ export const countries = {
     "currencySymbol": "₪",
     "currencyName": "New Shekel",
     "emojiFlag": "🇮🇱",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+972",
     "languages": [
@@ -2930,7 +3296,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇮🇹",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+39",
     "languages": [
@@ -2955,7 +3324,10 @@ export const countries = {
     "currencySymbol": "CFA",
     "currencyName": "West African CFA Franc",
     "emojiFlag": "🇨🇮",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+225",
     "languages": [
@@ -2980,7 +3352,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Jamaican Dollar",
     "emojiFlag": "🇯🇲",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1-876",
     "languages": [
@@ -3005,7 +3380,10 @@ export const countries = {
     "currencySymbol": "¥",
     "currencyName": "Yen",
     "emojiFlag": "🇯🇵",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Eastern Asia",
     "callingCode": "+81",
     "languages": [
@@ -3030,7 +3408,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Jersey Pound",
     "emojiFlag": "🇯🇪",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+44",
     "languages": [
@@ -3056,7 +3437,10 @@ export const countries = {
     "currencySymbol": "د.أ",
     "currencyName": "Jordanian Dinar",
     "emojiFlag": "🇯🇴",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+962",
     "languages": [
@@ -3081,7 +3465,10 @@ export const countries = {
     "currencySymbol": "₸",
     "currencyName": "Tenge",
     "emojiFlag": "🇰🇿",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Central Asia",
     "callingCode": "+7",
     "languages": [
@@ -3111,7 +3498,10 @@ export const countries = {
     "currencySymbol": "KSh",
     "currencyName": "Kenyan Shilling",
     "emojiFlag": "🇰🇪",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+254",
     "languages": [
@@ -3137,7 +3527,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Australian Dollar",
     "emojiFlag": "🇰🇮",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Micronesia",
     "callingCode": "+686",
     "languages": [
@@ -3165,8 +3558,11 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇽🇰",
-    "continent": "Europe",
-    "subregion": "Southeast Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "Southern Europe",
     "callingCode": "+383",
     "languages": [
       "sq",
@@ -3174,7 +3570,7 @@ export const countries = {
     ],
     "currencyDecimals": 2,
     "iso2": "XK",
-    "iso3": "KOS",
+    "iso3": "UNK",
     "numericCode": "null",
     "timezones": [
       "Europe/Belgrade"
@@ -3191,7 +3587,10 @@ export const countries = {
     "currencySymbol": "د.ك",
     "currencyName": "Kuwaiti Dinar",
     "emojiFlag": "🇰🇼",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+965",
     "languages": [
@@ -3216,7 +3615,10 @@ export const countries = {
     "currencySymbol": "с",
     "currencyName": "Som",
     "emojiFlag": "🇰🇬",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Central Asia",
     "callingCode": "+996",
     "languages": [
@@ -3242,7 +3644,10 @@ export const countries = {
     "currencySymbol": "₭",
     "currencyName": "Kip",
     "emojiFlag": "🇱🇦",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+856",
     "languages": [
@@ -3267,7 +3672,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇱🇻",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+371",
     "languages": [
@@ -3292,7 +3700,10 @@ export const countries = {
     "currencySymbol": "ل.ل",
     "currencyName": "Lebanese Pound",
     "emojiFlag": "🇱🇧",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+961",
     "languages": [
@@ -3318,10 +3729,14 @@ export const countries = {
     "currencySymbol": "L",
     "currencyName": "Loti",
     "emojiFlag": "🇱🇸",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Southern Africa",
     "callingCode": "+266",
     "languages": [
+      "en",
       "st"
     ],
     "currencyDecimals": 2,
@@ -3343,7 +3758,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Liberian Dollar",
     "emojiFlag": "🇱🇷",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+231",
     "languages": [
@@ -3368,7 +3786,10 @@ export const countries = {
     "currencySymbol": "ل.د",
     "currencyName": "Libyan Dinar",
     "emojiFlag": "🇱🇾",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+218",
     "languages": [
@@ -3393,8 +3814,11 @@ export const countries = {
     "currencySymbol": "Fr",
     "currencyName": "Swiss Franc",
     "emojiFlag": "🇱🇮",
-    "continent": "Europe",
-    "subregion": "Western Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "Central Europe",
     "callingCode": "+423",
     "languages": [
       "de"
@@ -3418,7 +3842,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇱🇹",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+370",
     "languages": [
@@ -3443,7 +3870,10 @@ export const countries = {
     "currencySymbol": "P",
     "currencyName": "Pataca",
     "emojiFlag": "🇲🇴",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Eastern Asia",
     "callingCode": "+853",
     "languages": [
@@ -3469,7 +3899,10 @@ export const countries = {
     "currencySymbol": "Ar",
     "currencyName": "Ariary",
     "emojiFlag": "🇲🇬",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+261",
     "languages": [
@@ -3495,7 +3928,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇵🇹",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+351",
     "languages": [
@@ -3520,14 +3956,15 @@ export const countries = {
     "currencySymbol": "MK",
     "currencyName": "Kwacha",
     "emojiFlag": "🇲🇼",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+265",
     "languages": [
-      "ny",
-      "yao",
-      "tn",
-      "en"
+      "en",
+      "ny"
     ],
     "currencyDecimals": 2,
     "iso2": "MW",
@@ -3548,11 +3985,17 @@ export const countries = {
     "currencySymbol": "RM",
     "currencyName": "Ringgit",
     "emojiFlag": "🇲🇾",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+60",
     "languages": [
-      "ms"
+      "ms",
+      "en",
+      "zh",
+      "ta"
     ],
     "currencyDecimals": 2,
     "iso2": "MY",
@@ -3574,8 +4017,11 @@ export const countries = {
     "currencySymbol": ".ރ",
     "currencyName": "Rufiyaa",
     "emojiFlag": "🇲🇻",
-    "continent": "Asia",
-    "subregion": "South Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
+    "subregion": "Southern Asia",
     "callingCode": "+960",
     "languages": [
       "dv"
@@ -3599,12 +4045,14 @@ export const countries = {
     "currencySymbol": "CFA",
     "currencyName": "West African CFA Franc",
     "emojiFlag": "🇲🇱",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+223",
     "languages": [
-      "fr",
-      "bm"
+      "fr"
     ],
     "currencyDecimals": 0,
     "iso2": "ML",
@@ -3625,7 +4073,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇲🇹",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+356",
     "languages": [
@@ -3651,7 +4102,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇲🇭",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Micronesia",
     "callingCode": "+692",
     "languages": [
@@ -3677,7 +4131,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇲🇶",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+596",
     "languages": [
@@ -3702,7 +4159,10 @@ export const countries = {
     "currencySymbol": "UM",
     "currencyName": "Ouguiya",
     "emojiFlag": "🇲🇷",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+222",
     "languages": [
@@ -3728,7 +4188,10 @@ export const countries = {
     "currencySymbol": "₨",
     "currencyName": "Mauritian Rupee",
     "emojiFlag": "🇲🇺",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+230",
     "languages": [
@@ -3754,8 +4217,11 @@ export const countries = {
     "currencyCode": "EUR",
     "currencySymbol": "€",
     "currencyName": "Euro",
-    "emojiFlag": "🇪🇸",
-    "continent": "Africa",
+    "emojiFlag": "🇲🇪",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+34",
     "languages": [
@@ -3780,7 +4246,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Mexican Peso",
     "emojiFlag": "🇲🇽",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "North America",
     "callingCode": "+52",
     "languages": [
@@ -3799,7 +4268,7 @@ export const countries = {
       "America/Ojinaga",
       "America/Hermosillo",
       "America/Tijuana",
-      "America/Santa_Isabel"
+      "America/Bahia_Banderas"
     ],
     "tld": ".mx"
   },
@@ -3813,7 +4282,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇫🇲",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Micronesia",
     "callingCode": "+691",
     "languages": [
@@ -3825,7 +4297,9 @@ export const countries = {
     "iso3": "FSM",
     "numericCode": "583",
     "timezones": [
-      "Pacific/Pohnpei"
+      "Pacific/Chuuk",
+      "Pacific/Pohnpei",
+      "Pacific/Kosrae"
     ],
     "tld": ".fm"
   },
@@ -3839,8 +4313,11 @@ export const countries = {
     "currencySymbol": "L",
     "currencyName": "Moldovan Leu",
     "emojiFlag": "🇲🇩",
-    "continent": "Europe",
-    "subregion": "Eastern Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "South-Eastern Europe",
     "callingCode": "+373",
     "languages": [
       "ro"
@@ -3864,7 +4341,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇲🇨",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Western Europe",
     "callingCode": "+377",
     "languages": [
@@ -3889,7 +4369,10 @@ export const countries = {
     "currencySymbol": "₮",
     "currencyName": "Tögrög",
     "emojiFlag": "🇲🇳",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Eastern Asia",
     "callingCode": "+976",
     "languages": [
@@ -3916,7 +4399,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇲🇪",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+382",
     "languages": [
@@ -3944,9 +4430,12 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "East Caribbean Dollar",
     "emojiFlag": "🇲🇸",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
-    "callingCode": "+1-664",
+    "callingCode": "+1664",
     "languages": [
       "en"
     ],
@@ -3969,12 +4458,14 @@ export const countries = {
     "currencySymbol": "د.م.",
     "currencyName": "Moroccan Dirham",
     "emojiFlag": "🇲🇦",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+212",
     "languages": [
-      "ar",
-      "fr"
+      "ar"
     ],
     "currencyDecimals": 2,
     "iso2": "MA",
@@ -3995,7 +4486,10 @@ export const countries = {
     "currencySymbol": "MT",
     "currencyName": "Metical",
     "emojiFlag": "🇲🇿",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+258",
     "languages": [
@@ -4020,13 +4514,16 @@ export const countries = {
     "currencySymbol": "K",
     "currencyName": "Kyat",
     "emojiFlag": "🇲🇲",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+95",
     "languages": [
       "my"
     ],
-    "currencyDecimals": 2,
+    "currencyDecimals": 0,
     "iso2": "MM",
     "iso3": "MMR",
     "numericCode": "104",
@@ -4045,24 +4542,15 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Namibian Dollar",
     "emojiFlag": "🇳🇦",
-    "continent": "Africa",
-    "subregion": "Southern Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
+    "subregion": "Sub-Saharan Africa",
     "callingCode": "+264",
     "languages": [
       "en",
-      "af",
-      "de",
-      "hz",
-      "kj",
-      "kwk",
-      "loz",
-      "nd",
-      "ng",
-      "sf",
-      "si",
-      "ss",
-      "ts",
-      "xh"
+      "af"
     ],
     "currencyDecimals": 2,
     "iso2": "NA",
@@ -4082,14 +4570,20 @@ export const countries = {
     "currencyCode": "",
     "currencySymbol": "",
     "currencyName": "",
-    "emojiFlag": "",
-    "continent": "",
-    "subregion": "",
+    "emojiFlag": "🏳️",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "North Atlantic",
     "callingCode": "",
-    "languages": [],
+    "languages": [
+      "en",
+      "fr"
+    ],
     "currencyDecimals": 0,
     "iso2": "null",
-    "iso3": "null",
+    "iso3": "NATO",
     "numericCode": "null",
     "timezones": [],
     "tld": ""
@@ -4104,7 +4598,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Australian Dollar",
     "emojiFlag": "🇳🇷",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Micronesia",
     "callingCode": "+674",
     "languages": [
@@ -4130,7 +4627,10 @@ export const countries = {
     "currencySymbol": "₨",
     "currencyName": "Nepalese Rupee",
     "emojiFlag": "🇳🇵",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Southern Asia",
     "callingCode": "+977",
     "languages": [
@@ -4155,7 +4655,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇳🇱",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Western Europe",
     "callingCode": "+31",
     "languages": [
@@ -4180,7 +4683,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "New Zealand Dollar",
     "emojiFlag": "🇳🇿",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Australia and New Zealand",
     "callingCode": "+64",
     "languages": [
@@ -4207,7 +4713,10 @@ export const countries = {
     "currencySymbol": "C$",
     "currencyName": "Córdoba",
     "emojiFlag": "🇳🇮",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Central America",
     "callingCode": "+505",
     "languages": [
@@ -4232,7 +4741,10 @@ export const countries = {
     "currencySymbol": "CFA",
     "currencyName": "West African CFA Franc",
     "emojiFlag": "🇳🇪",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+227",
     "languages": [
@@ -4258,7 +4770,10 @@ export const countries = {
     "currencySymbol": "₦",
     "currencyName": "Naira",
     "emojiFlag": "🇳🇬",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+234",
     "languages": [
@@ -4286,7 +4801,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "New Zealand Dollar",
     "emojiFlag": "🇳🇺",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+683",
     "languages": [
@@ -4296,7 +4814,7 @@ export const countries = {
     "currencyDecimals": 2,
     "iso2": "NU",
     "iso3": "NIU",
-    "numericCode": "570",
+    "numericCode": "520",
     "timezones": [
       "Pacific/Niue"
     ],
@@ -4312,11 +4830,15 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Australian Dollar",
     "emojiFlag": "🇳🇫",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Australia and New Zealand",
     "callingCode": "+672",
     "languages": [
-      "en"
+      "en",
+      "pih"
     ],
     "currencyDecimals": 2,
     "iso2": "NF",
@@ -4337,7 +4859,10 @@ export const countries = {
     "currencySymbol": "₩",
     "currencyName": "North Korean Won",
     "emojiFlag": "🇰🇵",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Eastern Asia",
     "callingCode": "+850",
     "languages": [
@@ -4362,7 +4887,10 @@ export const countries = {
     "currencySymbol": "₺",
     "currencyName": "Turkish Lira",
     "emojiFlag": "🇹🇷",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+90",
     "languages": [
@@ -4387,9 +4915,12 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇲🇵",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Micronesia",
-    "callingCode": "+1-670",
+    "callingCode": "+1670",
     "languages": [
       "en",
       "ch-Latn"
@@ -4413,7 +4944,10 @@ export const countries = {
     "currencySymbol": "kr",
     "currencyName": "Norwegian Krone",
     "emojiFlag": "🇳🇴",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+47",
     "languages": [
@@ -4440,7 +4974,10 @@ export const countries = {
     "currencySymbol": "﷼",
     "currencyName": "Omani Rial",
     "emojiFlag": "🇴🇲",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+968",
     "languages": [
@@ -4464,8 +5001,11 @@ export const countries = {
     "currencyCode": "GBP",
     "currencySymbol": "£",
     "currencyName": "Pound Sterling",
-    "emojiFlag": "🇬🇧",
-    "continent": "Europe",
+    "emojiFlag": "GB",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+44",
     "languages": [
@@ -4489,8 +5029,11 @@ export const countries = {
     "currencyCode": "RUB",
     "currencySymbol": "₽",
     "currencyName": "Ruble",
-    "emojiFlag": "🏳️",
-    "continent": "Asia",
+    "emojiFlag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Caucasus",
     "callingCode": "+7",
     "languages": [
@@ -4504,7 +5047,7 @@ export const countries = {
     "timezones": [
       "Europe/Moscow"
     ],
-    "tld": ".ru"
+    "tld": "null"
   },
   "PAK": {
     "id": "PAK",
@@ -4516,7 +5059,10 @@ export const countries = {
     "currencySymbol": "₨",
     "currencyName": "Pakistani Rupee",
     "emojiFlag": "🇵🇰",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Southern Asia",
     "callingCode": "+92",
     "languages": [
@@ -4542,7 +5088,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇵🇼",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Micronesia",
     "callingCode": "+680",
     "languages": [
@@ -4568,7 +5117,10 @@ export const countries = {
     "currencySymbol": "₪",
     "currencyName": "New Shekel",
     "emojiFlag": "🇵🇸",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+970",
     "languages": [
@@ -4594,7 +5146,10 @@ export const countries = {
     "currencySymbol": "B/.",
     "currencyName": "Balboa",
     "emojiFlag": "🇵🇦",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Central America",
     "callingCode": "+507",
     "languages": [
@@ -4619,13 +5174,17 @@ export const countries = {
     "currencySymbol": "K",
     "currencyName": "Kina",
     "emojiFlag": "🇵🇬",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Melanesia",
     "callingCode": "+675",
     "languages": [
       "en",
-      "tpi",
-      "hmo"
+      "ho",
+      "meu",
+      "tpi"
     ],
     "currencyDecimals": 2,
     "iso2": "PG",
@@ -4646,7 +5205,10 @@ export const countries = {
     "currencySymbol": "₲",
     "currencyName": "Guaraní",
     "emojiFlag": "🇵🇾",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+595",
     "languages": [
@@ -4672,13 +5234,16 @@ export const countries = {
     "currencySymbol": "S/.",
     "currencyName": "Sol",
     "emojiFlag": "🇵🇪",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+51",
     "languages": [
       "es",
       "qu",
-      "aym"
+      "ay"
     ],
     "currencyDecimals": 2,
     "iso2": "PE",
@@ -4699,7 +5264,10 @@ export const countries = {
     "currencySymbol": "₱",
     "currencyName": "Philippine Peso",
     "emojiFlag": "🇵🇭",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+63",
     "languages": [
@@ -4725,7 +5293,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "New Zealand Dollar",
     "emojiFlag": "🇵🇳",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+64",
     "languages": [
@@ -4750,7 +5321,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇵🇹",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+351",
     "languages": [
@@ -4777,7 +5351,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇵🇷",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1-787/+1-939",
     "languages": [
@@ -4803,7 +5380,10 @@ export const countries = {
     "currencySymbol": "﷼",
     "currencyName": "Qatari Riyal",
     "emojiFlag": "🇶🇦",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+974",
     "languages": [
@@ -4828,7 +5408,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Chilean Peso",
     "emojiFlag": "🇨🇱",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+56",
     "languages": [
@@ -4839,6 +5422,7 @@ export const countries = {
     "iso3": "CHL",
     "numericCode": "152",
     "timezones": [
+      "America/Santiago",
       "Pacific/Easter"
     ],
     "tld": ".cl"
@@ -4853,7 +5437,10 @@ export const countries = {
     "currencySymbol": "ден",
     "currencyName": "Denar",
     "emojiFlag": "🇲🇰",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+389",
     "languages": [
@@ -4878,7 +5465,10 @@ export const countries = {
     "currencySymbol": "zł",
     "currencyName": "Złoty",
     "emojiFlag": "🇵🇱",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Central Europe",
     "callingCode": "+48",
     "languages": [
@@ -4903,7 +5493,10 @@ export const countries = {
     "currencySymbol": "FCFA",
     "currencyName": "Central African CFA Franc",
     "emojiFlag": "🇨🇬",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+242",
     "languages": [
@@ -4928,7 +5521,10 @@ export const countries = {
     "currencySymbol": "L",
     "currencyName": "Romanian Leu",
     "emojiFlag": "🇷🇴",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "South-Eastern Europe",
     "callingCode": "+40",
     "languages": [
@@ -4953,7 +5549,10 @@ export const countries = {
     "currencySymbol": "₽",
     "currencyName": "Ruble",
     "emojiFlag": "🇷🇺",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Eastern Europe",
     "callingCode": "+7",
     "languages": [
@@ -4966,7 +5565,6 @@ export const countries = {
     "timezones": [
       "Europe/Kaliningrad",
       "Europe/Moscow",
-      "Europe/Simferopol",
       "Europe/Volgograd",
       "Europe/Samara",
       "Asia/Yekaterinburg",
@@ -4994,7 +5592,10 @@ export const countries = {
     "currencySymbol": "FRw",
     "currencyName": "Rwandan Franc",
     "emojiFlag": "🇷🇼",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+250",
     "languages": [
@@ -5021,10 +5622,14 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇸🇽",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+599",
     "languages": [
+      "nl",
       "en"
     ],
     "currencyDecimals": 2,
@@ -5046,7 +5651,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "East Caribbean Dollar",
     "emojiFlag": "🇰🇳",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1-869",
     "languages": [
@@ -5063,7 +5671,7 @@ export const countries = {
   },
   "SLV": {
     "id": "SLV",
-    "name": "El Salvador",
+    "name": "Salvador",
     "nativeName": "El Salvador",
     "indonesianName": "El Salvador",
     "icon": icons.Salvador,
@@ -5071,7 +5679,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇸🇻",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Central America",
     "callingCode": "+503",
     "languages": [
@@ -5096,7 +5707,10 @@ export const countries = {
     "currencySymbol": "T",
     "currencyName": "Tālā",
     "emojiFlag": "🇼🇸",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+685",
     "languages": [
@@ -5122,7 +5736,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇸🇲",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+378",
     "languages": [
@@ -5147,7 +5764,10 @@ export const countries = {
     "currencySymbol": "Db",
     "currencyName": "Dobra",
     "emojiFlag": "🇸🇹",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+239",
     "languages": [
@@ -5172,7 +5792,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇮🇹",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+39",
     "languages": [
@@ -5198,7 +5821,10 @@ export const countries = {
     "currencySymbol": "﷼",
     "currencyName": "Saudi Riyal",
     "emojiFlag": "🇸🇦",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+966",
     "languages": [
@@ -5223,21 +5849,24 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Pound Sterling",
     "emojiFlag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+44",
     "languages": [
-      "en-GB",
+      "en",
       "gd"
     ],
     "currencyDecimals": 2,
     "iso2": "GB",
     "iso3": "SCO",
-    "numericCode": "990",
+    "numericCode": "null",
     "timezones": [
       "Europe/London"
     ],
-    "tld": ".uk"
+    "tld": ".scot"
   },
   "SEN": {
     "id": "SEN",
@@ -5249,12 +5878,16 @@ export const countries = {
     "currencySymbol": "CFA",
     "currencyName": "West African CFA Franc",
     "emojiFlag": "🇸🇳",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+221",
     "languages": [
       "fr",
-      "wo"
+      "wo",
+      "ff"
     ],
     "currencyDecimals": 0,
     "iso2": "SN",
@@ -5275,7 +5908,10 @@ export const countries = {
     "currencySymbol": "дин.",
     "currencyName": "Serbian Dinar",
     "emojiFlag": "🇷🇸",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+381",
     "languages": [
@@ -5300,12 +5936,15 @@ export const countries = {
     "currencySymbol": "₨",
     "currencyName": "Seychellois Rupee",
     "emojiFlag": "🇸🇨",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+248",
     "languages": [
-      "fr",
       "en",
+      "fr",
       "crs"
     ],
     "currencyDecimals": 2,
@@ -5327,12 +5966,14 @@ export const countries = {
     "currencySymbol": "Le",
     "currencyName": "Leone",
     "emojiFlag": "🇸🇱",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+232",
     "languages": [
-      "en",
-      "kri"
+      "en"
     ],
     "currencyDecimals": 2,
     "iso2": "SL",
@@ -5353,7 +5994,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Singapore Dollar",
     "emojiFlag": "🇸🇬",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+65",
     "languages": [
@@ -5372,7 +6016,7 @@ export const countries = {
     "tld": ".sg"
   },
   "SXE": {
-    "id": "SXM",
+    "id": "SXE",
     "name": "Sint Eustatius",
     "nativeName": "Sint Eustatius",
     "indonesianName": "Sint Eustatius",
@@ -5381,20 +6025,24 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇸🇽",
-    "continent": "Americas",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+599",
     "languages": [
-      "nl"
+      "nl",
+      "en"
     ],
     "currencyDecimals": 2,
-    "iso2": "SX",
-    "iso3": "SXM",
-    "numericCode": "534",
+    "iso2": "BQ",
+    "iso3": "BES",
+    "numericCode": "535",
     "timezones": [
-      "America/Curacao"
+      "America/Puerto_Rico"
     ],
-    "tld": ".sx"
+    "tld": ".bq"
   },
   "SXM": {
     "id": "SXM",
@@ -5406,7 +6054,10 @@ export const countries = {
     "currencySymbol": "ƒ",
     "currencyName": "Netherlands Antillean Guilder",
     "emojiFlag": "🇸🇽",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1-721",
     "languages": [
@@ -5418,7 +6069,7 @@ export const countries = {
     "iso3": "SXM",
     "numericCode": "534",
     "timezones": [
-      "America/Anguilla"
+      "America/Curacao"
     ],
     "tld": ".sx"
   },
@@ -5432,7 +6083,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇸🇰",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Central Europe",
     "callingCode": "+421",
     "languages": [
@@ -5457,8 +6111,11 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇸🇮",
-    "continent": "Europe",
-    "subregion": "Central Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "Southern Europe",
     "callingCode": "+386",
     "languages": [
       "sl"
@@ -5482,7 +6139,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Solomon Islands Dollar",
     "emojiFlag": "🇸🇧",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Melanesia",
     "callingCode": "+677",
     "languages": [
@@ -5507,7 +6167,10 @@ export const countries = {
     "currencySymbol": "S",
     "currencyName": "Somali Shilling",
     "emojiFlag": "🇸🇴",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+252",
     "languages": [
@@ -5532,19 +6195,23 @@ export const countries = {
     "currencyCode": "SLSH",
     "currencySymbol": "Sl",
     "currencyName": "Somaliland Shilling",
-    "emojiFlag": "🇸🇱",
-    "continent": "Africa",
+    "emojiFlag": "🇸🇴",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+252",
     "languages": [
-      "so"
+      "so",
+      "ar"
     ],
     "currencyDecimals": 2,
-    "iso2": "null",
-    "iso3": "SML",
-    "numericCode": "null",
+    "iso2": "SO",
+    "iso3": "SOL",
+    "numericCode": "706",
     "timezones": [
-      "Africa/Harare"
+      "Africa/Mogadishu"
     ],
     "tld": ".so"
   },
@@ -5558,7 +6225,10 @@ export const countries = {
     "currencySymbol": "R",
     "currencyName": "Rand",
     "emojiFlag": "🇿🇦",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Southern Africa",
     "callingCode": "+27",
     "languages": [
@@ -5592,7 +6262,10 @@ export const countries = {
     "currencySymbol": "₩",
     "currencyName": "South Korean Won",
     "emojiFlag": "🇰🇷",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Eastern Asia",
     "callingCode": "+82",
     "languages": [
@@ -5617,7 +6290,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "South Sudanese Pound",
     "emojiFlag": "🇸🇸",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Middle Africa",
     "callingCode": "+211",
     "languages": [
@@ -5642,7 +6318,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇪🇸",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+34",
     "languages": [
@@ -5669,8 +6348,11 @@ export const countries = {
     "currencySymbol": "₨",
     "currencyName": "Sri Lankan Rupee",
     "emojiFlag": "🇱🇰",
-    "continent": "Asia",
-    "subregion": "South Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
+    "subregion": "Southern Asia",
     "callingCode": "+94",
     "languages": [
       "si",
@@ -5695,7 +6377,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇧🇱",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+590",
     "languages": [
@@ -5720,7 +6405,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "East Caribbean Dollar",
     "emojiFlag": "🇱🇨",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1758",
     "languages": [
@@ -5745,7 +6433,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "East Caribbean Dollar",
     "emojiFlag": "🇻🇨",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1784",
     "languages": [
@@ -5770,7 +6461,10 @@ export const countries = {
     "currencySymbol": "ج.س.",
     "currencyName": "Sudanese Pound",
     "emojiFlag": "🇸🇩",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+249",
     "languages": [
@@ -5796,7 +6490,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Surinamese Dollar",
     "emojiFlag": "🇸🇷",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+597",
     "languages": [
@@ -5822,8 +6519,11 @@ export const countries = {
     "currencySymbol": "L",
     "currencyName": "Lilangeni",
     "emojiFlag": "🇸🇿",
-    "continent": "Africa",
-    "subregion": "Southern Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
+    "subregion": "Sub-Saharan Africa",
     "callingCode": "+268",
     "languages": [
       "en",
@@ -5848,7 +6548,10 @@ export const countries = {
     "currencySymbol": "kr",
     "currencyName": "Swedish Krona",
     "emojiFlag": "🇸🇪",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+46",
     "languages": [
@@ -5873,8 +6576,11 @@ export const countries = {
     "currencySymbol": "Fr",
     "currencyName": "Swiss Franc",
     "emojiFlag": "🇨🇭",
-    "continent": "Europe",
-    "subregion": "Central Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "Western Europe",
     "callingCode": "+41",
     "languages": [
       "de",
@@ -5901,7 +6607,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Syrian Pound",
     "emojiFlag": "🇸🇾",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+963",
     "languages": [
@@ -5926,7 +6635,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "New Taiwan Dollar",
     "emojiFlag": "🇹🇼",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Eastern Asia",
     "callingCode": "+886",
     "languages": [
@@ -5951,7 +6663,10 @@ export const countries = {
     "currencySymbol": "SM",
     "currencyName": "Somoni",
     "emojiFlag": "🇹🇯",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Central Asia",
     "callingCode": "+992",
     "languages": [
@@ -5976,7 +6691,10 @@ export const countries = {
     "currencySymbol": "Sh",
     "currencyName": "Tanzanian Shilling",
     "emojiFlag": "🇹🇿",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+255",
     "languages": [
@@ -6002,7 +6720,10 @@ export const countries = {
     "currencySymbol": "฿",
     "currencyName": "Baht",
     "emojiFlag": "🇹🇭",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+66",
     "languages": [
@@ -6026,8 +6747,11 @@ export const countries = {
     "currencyCode": "CNY",
     "currencySymbol": "¥",
     "currencyName": "Yuan",
-    "emojiFlag": "null",
-    "continent": "Asia",
+    "emojiFlag": "🇹ibet",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Central Asia",
     "callingCode": "+86",
     "languages": [
@@ -6035,9 +6759,9 @@ export const countries = {
       "zh"
     ],
     "currencyDecimals": 2,
-    "iso2": "null",
-    "iso3": "null",
-    "numericCode": "null",
+    "iso2": "CN",
+    "iso3": "CHN",
+    "numericCode": "156",
     "timezones": [
       "Asia/Shanghai"
     ],
@@ -6053,7 +6777,10 @@ export const countries = {
     "currencySymbol": "CFA",
     "currencyName": "West African CFA Franc",
     "emojiFlag": "🇹🇬",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Western Africa",
     "callingCode": "+228",
     "languages": [
@@ -6078,19 +6805,22 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "New Zealand Dollar",
     "emojiFlag": "🇹🇰",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+690",
     "languages": [
       "tkl",
-      "en"
+      "en-TK"
     ],
     "currencyDecimals": 2,
     "iso2": "TK",
     "iso3": "TKL",
     "numericCode": "772",
     "timezones": [
-      "Pacific/Fakaofo"
+      "Pacific/Tokelau"
     ],
     "tld": ".tk"
   },
@@ -6104,7 +6834,10 @@ export const countries = {
     "currencySymbol": "T$",
     "currencyName": "Paʻanga",
     "emojiFlag": "🇹🇴",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+676",
     "languages": [
@@ -6128,8 +6861,11 @@ export const countries = {
     "currencyCode": "PRB",
     "currencySymbol": "р.",
     "currencyName": "Transnistrian Ruble",
-    "emojiFlag": "🏳️‍󠁢Transnistria",
-    "continent": "Europe",
+    "emojiFlag": "🇹🇩",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Eastern Europe",
     "callingCode": "+373 533",
     "languages": [
@@ -6142,7 +6878,7 @@ export const countries = {
     "iso3": "null",
     "numericCode": "null",
     "timezones": [
-      "Europe/Chisinau"
+      "Europe/Kiev"
     ],
     "tld": ".md"
   },
@@ -6156,9 +6892,12 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Trinidad and Tobago Dollar",
     "emojiFlag": "🇹🇹",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
-    "callingCode": "+1-868",
+    "callingCode": "+1868",
     "languages": [
       "en"
     ],
@@ -6181,7 +6920,10 @@ export const countries = {
     "currencySymbol": "د.ت",
     "currencyName": "Tunisian Dinar",
     "emojiFlag": "🇹🇳",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+216",
     "languages": [
@@ -6206,7 +6948,10 @@ export const countries = {
     "currencySymbol": "₺",
     "currencyName": "Turkish Lira",
     "emojiFlag": "🇹🇷",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+90",
     "languages": [
@@ -6231,7 +6976,10 @@ export const countries = {
     "currencySymbol": "m",
     "currencyName": "Turkmenistan Manat",
     "emojiFlag": "🇹🇲",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Central Asia",
     "callingCode": "+993",
     "languages": [
@@ -6256,7 +7004,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇹🇨",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1649",
     "languages": [
@@ -6281,7 +7032,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Australian Dollar",
     "emojiFlag": "🇹🇻",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Polynesia",
     "callingCode": "+688",
     "languages": [
@@ -6307,7 +7061,10 @@ export const countries = {
     "currencySymbol": "USh",
     "currencyName": "Ugandan Shilling",
     "emojiFlag": "🇺🇬",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+256",
     "languages": [
@@ -6334,7 +7091,10 @@ export const countries = {
     "currencySymbol": "₴",
     "currencyName": "Hryvnia",
     "emojiFlag": "🇺🇦",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Eastern Europe",
     "callingCode": "+380",
     "languages": [
@@ -6362,7 +7122,10 @@ export const countries = {
     "currencySymbol": "د.إ",
     "currencyName": "UAE Dirham",
     "emojiFlag": "🇦🇪",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+971",
     "languages": [
@@ -6387,7 +7150,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Pound Sterling",
     "emojiFlag": "🇬🇧",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Northern Europe",
     "callingCode": "+44",
     "languages": [
@@ -6412,7 +7178,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇺🇸",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "North America",
     "callingCode": "+1",
     "languages": [
@@ -6424,9 +7193,10 @@ export const countries = {
     "numericCode": "840",
     "timezones": [
       "America/New_York",
+      "America/Los_Angeles",
       "America/Chicago",
       "America/Denver",
-      "America/Los_Angeles",
+      "America/Phoenix",
       "America/Anchorage",
       "Pacific/Honolulu"
     ],
@@ -6442,7 +7212,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "Uruguayan Peso",
     "emojiFlag": "🇺🇾",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+598",
     "languages": [
@@ -6467,12 +7240,16 @@ export const countries = {
     "currencySymbol": "soʻm",
     "currencyName": "Uzbekistan Som",
     "emojiFlag": "🇺🇿",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Central Asia",
     "callingCode": "+998",
     "languages": [
       "uz",
-      "ru"
+      "ru",
+      "tg"
     ],
     "currencyDecimals": 2,
     "iso2": "UZ",
@@ -6494,7 +7271,10 @@ export const countries = {
     "currencySymbol": "VT",
     "currencyName": "Vatu",
     "emojiFlag": "🇻🇺",
-    "continent": "Oceania",
+    "continent": {
+      "name": "Oceania",
+      "indonesianName": "Oceania"
+    },
     "subregion": "Melanesia",
     "callingCode": "+678",
     "languages": [
@@ -6521,7 +7301,10 @@ export const countries = {
     "currencySymbol": "€",
     "currencyName": "Euro",
     "emojiFlag": "🇻🇦",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Southern Europe",
     "callingCode": "+379",
     "languages": [
@@ -6547,7 +7330,10 @@ export const countries = {
     "currencySymbol": "Bs.",
     "currencyName": "Bolívar Soberano",
     "emojiFlag": "🇻🇪",
-    "continent": "South America",
+    "continent": {
+      "name": "South America",
+      "indonesianName": "Amerika Selatan"
+    },
     "subregion": "South America",
     "callingCode": "+58",
     "languages": [
@@ -6572,7 +7358,10 @@ export const countries = {
     "currencySymbol": "₫",
     "currencyName": "Đồng",
     "emojiFlag": "🇻🇳",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "South-Eastern Asia",
     "callingCode": "+84",
     "languages": [
@@ -6597,7 +7386,10 @@ export const countries = {
     "currencySymbol": "$",
     "currencyName": "United States Dollar",
     "emojiFlag": "🇻🇮",
-    "continent": "North America",
+    "continent": {
+      "name": "North America",
+      "indonesianName": "Amerika Utara"
+    },
     "subregion": "Caribbean",
     "callingCode": "+1340",
     "languages": [
@@ -6622,7 +7414,10 @@ export const countries = {
     "currencySymbol": "£",
     "currencyName": "Pound Sterling",
     "emojiFlag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
-    "continent": "Europe",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
     "subregion": "Western Europe",
     "callingCode": "+44",
     "languages": [
@@ -6648,7 +7443,10 @@ export const countries = {
     "currencySymbol": "د.م.",
     "currencyName": "Moroccan Dirham",
     "emojiFlag": "🇪🇭",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Northern Africa",
     "callingCode": "+212",
     "languages": [
@@ -6674,7 +7472,10 @@ export const countries = {
     "currencySymbol": "﷼",
     "currencyName": "Yemeni Rial",
     "emojiFlag": "🇾🇪",
-    "continent": "Asia",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
     "subregion": "Western Asia",
     "callingCode": "+967",
     "languages": [
@@ -6699,7 +7500,10 @@ export const countries = {
     "currencySymbol": "K",
     "currencyName": "Zambian Kwacha",
     "emojiFlag": "🇿🇲",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+260",
     "languages": [
@@ -6724,7 +7528,10 @@ export const countries = {
     "currencySymbol": "ZiG",
     "currencyName": "Zimbabwe Gold",
     "emojiFlag": "🇿🇼",
-    "continent": "Africa",
+    "continent": {
+      "name": "Africa",
+      "indonesianName": "Afrika"
+    },
     "subregion": "Eastern Africa",
     "callingCode": "+263",
     "languages": [
