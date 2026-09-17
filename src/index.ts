@@ -112,6 +112,7 @@ export { default as FrenchPolynesia } from './assets/images/flags/french-polynes
 export { default as Gabon } from './assets/images/flags/gabon.svg';
 export { default as GalapagosIslands } from './assets/images/flags/galapagos-islands.svg';
 export { default as Gambia } from './assets/images/flags/gambia.svg';
+export { default as Georgia } from './assets/images/flags/georgia.svg';
 export { default as Germany } from './assets/images/flags/germany.svg';
 export { default as Ghana } from './assets/images/flags/ghana.svg';
 export { default as Gibraltar } from './assets/images/flags/gibraltar.svg';
@@ -157,6 +158,7 @@ export { default as Liberia } from './assets/images/flags/liberia.svg';
 export { default as Libya } from './assets/images/flags/libya.svg';
 export { default as Liechtenstein } from './assets/images/flags/liechtenstein.svg';
 export { default as Lithuania } from './assets/images/flags/lithuania.svg';
+export { default as Luxembourg } from './assets/images/flags/luxembourg.svg';
 export { default as Macao } from './assets/images/flags/macao.svg';
 export { default as Madagascar } from './assets/images/flags/madagascar.svg';
 export { default as Madeira } from './assets/images/flags/madeira.svg';
@@ -323,3 +325,4 @@ export { default as Shopping } from './assets/images/preferences/shopping.svg';
 export { default as SoloTraveler } from './assets/images/preferences/solo_traveler.svg';
 
 export { countries } from './assets/data/countries.js';
+export { languages } from './assets/data/languages.js';

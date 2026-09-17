@@ -72,7 +72,7 @@ async function writeIndexFile() {
   }
 
   const header = `// ⚠️ Auto-generated file. Do not edit manually.\n\n`;
-  const footer = `export { countries } from './assets/data/countries.js';\n`;
+  const footer = `export { countries } from './assets/data/countries.js';\nexport { languages } from './assets/data/languages.js';\n`;
   fs.writeFileSync(outputFile, header + exportLines.join("\n") + "\n\n" + footer, "utf-8");
 
   console.log(`✅ Index file successfully written to: ${outputFile}`);

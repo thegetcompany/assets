@@ -2566,6 +2566,34 @@ export const countries = {
     ],
     "tld": ".gm"
   },
+  "GEO": {
+    "id": "GEO",
+    "name": "Georgia",
+    "nativeName": "საქართველო",
+    "indonesianName": "Georgia",
+    "icon": icons.Georgia,
+    "currencyCode": "GEL",
+    "currencySymbol": "₾",
+    "currencyName": "Lari",
+    "emojiFlag": "🇬🇪",
+    "continent": {
+      "name": "Asia",
+      "indonesianName": "Asia"
+    },
+    "subregion": "Western Asia",
+    "callingCode": "+995",
+    "languages": [
+      "ka"
+    ],
+    "currencyDecimals": 2,
+    "iso2": "GE",
+    "iso3": "GEO",
+    "numericCode": "268",
+    "timezones": [
+      "Asia/Tbilisi"
+    ],
+    "tld": ".ge"
+  },
   "DEU": {
     "id": "DEU",
     "name": "Germany",
@@ -3859,6 +3887,36 @@ export const countries = {
       "Europe/Vilnius"
     ],
     "tld": ".lt"
+  },
+  "LUX": {
+    "id": "LUX",
+    "name": "Luxembourg",
+    "nativeName": "Lëtzebuerg",
+    "indonesianName": "Luksemburg",
+    "icon": icons.Luxembourg,
+    "currencyCode": "EUR",
+    "currencySymbol": "€",
+    "currencyName": "Euro",
+    "emojiFlag": "🇱🇺",
+    "continent": {
+      "name": "Europe",
+      "indonesianName": "Eropa"
+    },
+    "subregion": "Western Europe",
+    "callingCode": "+352",
+    "languages": [
+      "lb",
+      "fr",
+      "de"
+    ],
+    "currencyDecimals": 2,
+    "iso2": "LU",
+    "iso3": "LUX",
+    "numericCode": "442",
+    "timezones": [
+      "Europe/Luxembourg"
+    ],
+    "tld": ".lu"
   },
   "MAC": {
     "id": "MAC",
